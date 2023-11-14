@@ -1,0 +1,2747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WBFRSJG');</script>
+        <!-- End Google Tag Manager -->
+
+
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="FF1FYqjTq4jtPgjgPt1mK6osCI0ReRY9aidYj4dS">
+    <title>    Explore Page
+ - Prepr Network</title>
+    <meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="author" content="PreprLabs">
+<meta name="title" content="Prepr Network">
+<meta name="description" content="Prepr is building a Global Lab Network connecting students and startups to employees and employers to co-LEARN. co-LAB. co-SOLVE.® real-world challenges and create business opportunities.">
+<meta property="og:image" content="https://d3f06rtlkr354b.cloudfront.net/public/front/img/logoNew.png"/>
+<meta property="og:title" content="Prepr Network">
+<meta property="og:description" content="Prepr is building a Global Lab Network connecting students and startups to employees and employers to co-LEARN. co-LAB. co-SOLVE.® real-world challenges and create business opportunities.">
+<meta property="og:image" content="https://d3f06rtlkr354b.cloudfront.net/public/front/img/logoNew.png"/>
+<meta property="og:title" content="Prepr Network"/>
+<meta property="og:description" content="Prepr is building a Global Lab Network connecting students and startups to employees and employers to co-LEARN. co-LAB. co-SOLVE.® real-world challenges and create business opportunities." />
+<meta name="twitter:image:alt" content="Prepr Network">
+    <link rel="shortcut icon" href="https://d3f06rtlkr354b.cloudfront.net/public/uploads/settings/favicon.ico">
+    <link rel="icon"
+          href="https://d3f06rtlkr354b.cloudfront.net/public/uploads/settings/favicon.ico"
+          type="image/x-icon">
+    <link href="https://d3f06rtlkr354b.cloudfront.net/public/adminassets/vendors/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.css"
+          rel="stylesheet" type="text/css"/>
+    <link href="https://d3f06rtlkr354b.cloudfront.net/public/front/css/dist/bootstrap.min.css" rel="stylesheet">
+    <link href="https://d3f06rtlkr354b.cloudfront.net/public/front/css/dist/mdb.min.css" rel="stylesheet">
+    <link href="https://d3f06rtlkr354b.cloudfront.net/public/front/css/dist/style.css" rel="stylesheet">
+    <link href="https://d3f06rtlkr354b.cloudfront.net/public/front/css/dist/jquery.toast.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.18/css/intlTelInput.css" integrity="sha512-gxWow8Mo6q6pLa1XH/CcH8JyiSDEtiwJV78E+D+QP0EVasFs8wKXq16G8CLD4CJ2SnonHr4Lm/yY2fSI2+cbmw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link href="https://d3f06rtlkr354b.cloudfront.net/public/front/enjoyhint/enjoyhint.css" rel="stylesheet">
+    <link href="https://d3f06rtlkr354b.cloudfront.net/public/front/enjoyhint/enjoyhint.css" rel="stylesheet">
+    <!-- dialog flow css -->
+    <link href="https://d3f06rtlkr354b.cloudfront.net/public/front/css/dialog-flow.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/css/select2.min.css" rel="stylesheet"/>
+    <style>
+        #explore_interests {
+            background-image: linear-gradient(to right, #d5ffc6, #7BD1F2);
+            color: #000000;
+        }
+        #explore_interests .row {
+            margin: 0;
+        }
+
+        #explore_interests #close_explore_interests {
+            cursor: pointer;
+        }
+
+        #explore_interests #interests {
+            margin-bottom: 8rem;
+            user-select: none;
+        }
+
+        #explore_interests #interests .remove_interest:hover {
+            opacity: 0.8;
+        }
+
+        .explore_pill {
+            display: inline-block;
+            margin: 0.5rem;
+            background: #F3F4F8;
+            cursor: pointer;
+            padding: 5px;
+            font-weight: 300;
+            font-size: 0.8rem;
+            border: 1px solid #C8C8C8;
+            border-radius: 10px;
+        }
+
+        .selected_explore_pill {
+            background-color: #498CCE;
+            color: #FFFFFF;
+        }
+
+        .explore_section {
+            background: #FFFFFF;
+            color: #000000;
+            box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+        }
+
+        .explore_component {
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .explore_component h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+        }
+
+        .explore_component.selected_explore_component {
+            background: #498CCE;
+            color: #FFFFFF;
+        }
+
+        .explore_section h3.explore-item-title {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            color: #498CCE;
+        }
+
+        .explore_section.explore-item .explore-item-type {
+            max-width: 70%;
+            max-height: 70%;
+        }
+
+        .explore_section.explore-item .item-info span {
+            font-weight: bold;
+        }
+
+        .explore_section.explore-item .item-info a {
+            font-weight: bold;
+            color: #498CCE;
+        }
+
+        .explore_section.explore-item .item-info {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .explore_section.explore-item .explore-item-stats .fa-heart,
+        .explore_section.explore-item .explore-item-stats .fa-share-alt {
+            color: #498CCE;
+        }
+
+        .component_type {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .component_type.selected_component_type {
+            background: #498CCE;
+            color: #FFFFFF;
+        }
+
+        .explore_section .search-filter {
+            cursor: pointer;
+            background: #498CCE;
+            color: #ffffff;
+            user-select: none;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            padding: 0.5rem 0;
+        }
+
+        .explore_section.filter-section {
+            font-size: 0.8rem;
+        }
+
+        .explore_section .custom-checkbox-container .checkmark {
+            width: 1.2rem;
+            height: 1.2rem;
+            border: 2px solid #999;
+        }
+
+        #component_type01{
+            border-radius: 10px 10px 0 0;
+        }
+        .explore_section .custom-checkbox-container .checkmark:after {
+            left: 0.3rem;
+            top: 0.1rem;
+        }
+
+        .tag_pill {
+            padding: 8px 13px;
+            background: #F3F4F8;
+            border: 1px solid #C8C8C8;
+            border-radius: 10px;
+            font-size: 0.7rem;
+            margin: 0.4rem;
+        }
+
+        .blue_btn {
+            min-width: 5rem;
+            color: #FFFFFF;
+            background: #498CCE;
+        }
+
+        .blue_btn_outline {
+            border: 1px solid #498CCE;
+            border-radius: 5px;
+            background: #498CCE;
+        }
+
+        .rating-stars {
+            vertical-align: unset !important;
+        }
+        .pagination .page-item.active .page-link {
+        background-color: #498CCE !important;
+        }
+        .p-2 {
+            padding: 1rem!important;
+        }
+        .col-12 .my-2{
+            padding: 0px !important;
+        }
+        .col-1 {
+            background-color: white;
+            border-radius: 10px 0px 0px 10px !important;
+        }
+        .col-11 {
+            padding:0px;
+        }
+        #searchForSkills + span.select2-container--default.select2-container--focus span.select2-selection--multiple {
+            border-radius: 4px !important;
+        }
+        .searchForSkillsss + span.select2-container--default span.select2-selection--multiple {
+            border-radius: 0 10px 10px 0px !important;
+        }
+        #searchForSkills + .select2-container--default.select2-container--focus .select2-selection--multiple, .select2-container--default .select2-selection--multiple {
+            border-radius: 4px !important;
+        }
+        #searchForSkills + .select2-container .select2-search--inline .select2-search__field {
+            padding-left: 5px;
+        }
+        #searchForSkills + .select2-container--default .select2-selection--multiple .select2-selection__rendered {
+            padding-left: 0px;
+        }
+        .iconsrch{
+            left: 20px;
+            padding-left: 0px;
+            top: 12px;
+            padding-top: 4px;
+            font-size: 20px;
+        }
+        @media  only screen and (max-width: 600px) {
+            .explore_component h2 {
+            font-size:14px;
+            }
+            .explore_section h3.explore-item-title {
+                font-size:22px;
+                word-break: break-word;
+            }
+            .iconsrch {
+            left: 9px;
+            }
+            .exp_box {
+            padding-left: 0px !important;
+            }
+        }
+        .row {
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+        }
+        .wrapping {
+            font-size: 18px;
+            word-break: break-word;
+        }
+        .side_filters_xp {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+        .exp_box {
+            padding-right: 0px !important;
+        }
+        .ttle_break {
+            word-break: break-word ;
+        }
+    </style>
+            <link href="https://d3f06rtlkr354b.cloudfront.net/public/front/css/dist/all.css" rel="stylesheet">
+        <link href="https://d3f06rtlkr354b.cloudfront.net/public/front/css/pnotify.custom.min.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" rel="stylesheet" type="text/css">
+    <!-- Stripe Stylesheet -->
+    <link href="https://d3f06rtlkr354b.cloudfront.net/public/front/css/stripe.css" rel="stylesheet">
+    <script src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/popper.min.js"></script>
+    <script src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/sweetalert.min.js"></script>
+
+    <script>
+        window.Laravel = {"csrfToken":"FF1FYqjTq4jtPgjgPt1mK6osCI0ReRY9aidYj4dS"};
+    </script>
+
+    
+    <style>
+        #messages {
+            top: 50px;
+            z-index: 10000;
+        }
+        .notification-img {
+            max-width: 6rem;
+            max-height: 6rem;
+        }
+        .notification-container {
+            background: #EAF4EF;
+            border: 1px solid #1BC459;
+            color: #000000;
+            border-radius: 10px;
+        }
+        #all-notifications-container {
+            right: 0.4rem;
+            min-width: 400px;
+            width: 40%;
+        }
+
+        @media(max-width: 768px) {
+            #messages {
+                top: 100px;
+            }
+            #all-notifications-container {
+                width: 100%;
+                right: 0;
+            }
+        }
+    </style>
+
+    
+            <script>
+            window.intercomSettings = {
+                app_id: "yh6pklez",
+                name: "Ryan Acham", // Full name
+                email: "ryanacham@hotmail.com", // Email address
+                // created_at: "1312182000" // Signup date as a Unix timestamp
+            };
+        </script>
+
+        <!-- Hotjar Tracking Code for https://preprlabs.org -->
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/yh6pklez'
+            (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/yh6pklez';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+        </script>
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+    
+
+    
+    <script>
+        window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(18),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(19),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var x=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof x&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof x&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(21)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(21)(r);n.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(21)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(21)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(b?b.then(a):w?w(a):(E=-E,R.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(21)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var x=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!w&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(){var t=window.NREUM,n=t.info.accountID||null,e=t.info.agentID||null,r=t.info.trustKey||null,i="btoa"in window&&"function"==typeof window.btoa;if(!n||!e||!i)return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:e,id:o.generateCatId(),tr:o.generateCatId(),ti:Date.now()}};return r&&n!==r&&(a.d.tk=r),btoa(JSON.stringify(a))}var o=t(16);n.exports={generateTraceHeader:r}},{}],11:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<p;r++)t.removeEventListener(l[r],this.listener,!1);n.aborted||(e.duration=s.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==n.status&&(n.status=0):a(this,t),e.cbTime=this.cbTime,d.emit("xhr-done",[t],t),c("xhr",[n,e,this.startTime]))}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return w(r)}function i(t,n){var e=f(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}function a(t,n){t.params.status=n.status;var e=o(n,t.lastSize);if(e&&(t.metrics.rxSize=e),t.sameOrigin){var r=n.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var s=t("loader");if(s.xhrWrappable){var c=t("handle"),f=t(12),u=t(10).generateTraceHeader,d=t("ee"),l=["load","error","abort","timeout"],p=l.length,h=t("id"),m=t(15),w=t(14),v=window.XMLHttpRequest;s.features.xhr=!0,t(9),d.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,n.loadCaptureCalled=!1,t.addEventListener("load",function(e){a(n,t)},!1),m&&(m>34||m<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),d.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),d.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var e=!1;if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(e=!!NREUM.init.distributed_tracing.enabled),e&&this.sameOrigin){var r=u();r&&n.setRequestHeader("newrelic",r)}}),d.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=w(r);i&&(e.txSize=i)}this.startTime=s.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{d.emit("internal-error",[e])}catch(r){}}};for(var a=0;a<p;a++)n.addEventListener(l[a],this.listener,!1)}),d.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),d.on("xhr-load-added",function(t,n){var e=""+h(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),d.on("xhr-load-removed",function(t,n){var e=""+h(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),d.on("addEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&d.emit("xhr-load-added",[t[1],t[2]],n)}),d.on("removeEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&d.emit("xhr-load-removed",[t[1],t[2]],n)}),d.on("fn-start",function(t,n,e){n instanceof v&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=s.now()))}),d.on("fn-end",function(t,n){this.xhrCbStart&&d.emit("xhr-cb-time",[s.now()-this.xhrCbStart,this.onload,n],n)})}},{}],12:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],13:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(18),s=t(19),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t,n){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,n])}},{}],14:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],15:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],16:[function(t,n,e){function r(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(n=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(n=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<16;i++)o.push(t().toString(16));return o.join("")}n.exports={generateUuid:r,generateCatId:o}},{}],17:[function(t,n,e){function r(t,n){if(!o)return!1;if(t!==o)return!1;if(!n)return!0;if(!i)return!1;for(var e=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==e[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}n.exports={agent:o,version:i,match:r}},{}],18:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],19:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],20:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],21:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(19),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=m(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[g[e]];return d&&d.push([x,e,r,a]),a}}function p(t,n){y[t]=m(t).concat(n)}function h(t,n){var e=y[t];if(e)for(var r=0;r<e.length;r++)e[r]===n&&e.splice(r,1)}function m(t){return y[t]||[]}function w(t){return d[t]=d[t]||o(e)}function v(t,n){f(t,function(t,e){n=n||"feature",g[e]=n,n in u||(u[n]=[])})}var y={},g={},x={on:p,addEventListener:p,removeEventListener:h,emit:e,get:w,listeners:m,context:n,buffer:v,abort:a,aborted:!1};return x}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(18),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!E++){var t=b.info=NREUM.info,n=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(g,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=p.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return R.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(18),u=t("ee"),d=t(17),l=window,p=l.document,h="addEventListener",m="attachEvent",w=l.XMLHttpRequest,v=w&&w.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:w,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var y=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},x=w&&v&&v[h]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:y,features:{},xhrWrappable:x,userAgent:d};t(13),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,R=t(20)},{}]},{},["loader",2,11,4,3]);
+        ;NREUM.loader_config={accountID:"2392709",trustKey:"2392709",agentID:"475553511",licenseKey:"d182ecbbfd",applicationID:"475553511"}
+        ;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"d182ecbbfd",applicationID:"475553511",sa:1}
+    </script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.18/js/intlTelInput.min.js" integrity="sha512-hpJ6J4jGqnovQ5g1J39VtNq1/UPsaFjjR6tuCVVkKtFIx8Uy4GeixgIxHPSG72lRUYx1xg/Em+dsqxvKNwyrSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://d3f06rtlkr354b.cloudfront.net/public/adminassets/vendors/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+    <script src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/jquery.toast.min.js"></script>
+    <script src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/pnotify.custom.min.js"></script>
+    <script src="https://d3f06rtlkr354b.cloudfront.net/public/front/enjoyhint/enjoyhint.min.js"></script>
+    <script src="https://d3f06rtlkr354b.cloudfront.net/public/front/enjoyhint/enjoyhint.js"></script>
+    <script>
+        /*$(document).ready(function () {
+            if ($('section').height() < 992) {
+                $(".footer").css("position", "fixed");
+            }
+        });
+        $( window ).resize(function() {
+            if ($('section').height() < 992) {
+                $(".footer").css("position", "fixed");
+            }
+        });*/
+    </script>
+
+    
+    <script type="text/javascript">
+        (function(f,b){if(!b.__SV){var e,g,i,h;window.mixpanel=b;b._i=[];b.init=function(e,f,c){function g(a,d){var b=d.split(".");2==b.length&&(a=a[b[0]],d=b[1]);a[d]=function(){a.push([d].concat(Array.prototype.slice.call(arguments,0)))}}var a=b;"undefined"!==typeof c?a=b[c]=[]:c="mixpanel";a.people=a.people||[];a.toString=function(a){var d="mixpanel";"mixpanel"!==c&&(d+="."+c);a||(d+=" (stub)");return d};a.people.toString=function(){return a.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+        for(h=0;h<i.length;h++)g(a,i[h]);var j="set set_once union unset remove delete".split(" ");a.get_group=function(){function b(c){d[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));a.push([e,call2])}}for(var d={},e=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<j.length;c++)b(j[c]);return d};b._i.push([e,f,c])};b.__SV=1.2;e=f.createElement("script");e.type="text/javascript";e.async=!0;e.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+        MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";g=f.getElementsByTagName("script")[0];g.parentNode.insertBefore(e,g)}})(document,window.mixpanel||[]);
+
+        // Enabling the debug mode flag is useful during implementation,
+        // but it's recommended you remove it for production
+        mixpanel.init("4b6ceeae71b58d0a543e6827b65a0074");
+    </script>
+    
+
+    <!-- firebase integration started -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
+        import { getMessaging, getToken, onMessage } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-messaging.js"
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyC2o9-iD8dVDGHVSE5_EVwEHflVbJaVzmg",
+            authDomain: "prepr-f063e.firebaseapp.com",
+            projectId: "prepr-f063e",
+            storageBucket: "prepr-f063e.appspot.com",
+            messagingSenderId: "614443762904",
+            appId: "1:614443762904:web:639493d460c442432203ad"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        // Get registration token. Initially this makes a network call, once retrieved
+        // subsequent calls to getToken will return from cache.
+        const messaging = getMessaging();
+        getToken(messaging, { vapidKey: "BGTBW_wjQL7qovhB1jM7JhbAqwG2FiCNru56TPZ4naPP_Iygre5o5Z8LlNhFbF9sqde-pGgLqne5GqPyRy1cb7M" }).then((currentToken) => {
+        if (currentToken) {
+            // Send the token to your server and update the UI if necessary
+            localStorage.setItem('fcm_notification_permission', 1);
+            localStorage.setItem('fcm_device_token', currentToken);
+
+        } else {
+            // Show permission request UI
+            console.log('No registration token available. Request permission to generate one.');
+        }
+        }).catch((err) => {
+            console.log('An error occurred while retrieving token. ', err);
+        });
+        // handle foreground notifications
+        onMessage(messaging, (payload) => {
+            console.log('Message received. ', payload);
+            var newNotificationHtml = $('<div class="notification-container position-relative mb-3"> <div style="left: 0; right: unset; color: #27AE60" class="dashboard_heading_wrapper_close_icon position-absolute p-2"> <span class="icon-close-notification"></span> </div><div class="d-flex notification-box p-3"> <div class="mx-4"> <img class="notification-img" src="" alt="notification_image" onerror="this.src=&quot;/front/img/PWA_icons/leaf-512x512.png&quot;"> </div><div class="flex-grow-1"> <h3 class="notification-title"></h3> <p class="notification-body px-2"></p><div> <a class="btn btn-success waves-effect waves-light notification-link">View</a> </div></div></div></div>');
+            $(newNotificationHtml).find('.notification-img').attr('src', payload.data.image);
+            $(newNotificationHtml).find('.notification-title').text(payload.notification.title);
+            $(newNotificationHtml).find('.notification-body').text(payload.notification.body);
+            $(newNotificationHtml).find('.notification-link').attr('href', payload.data.link);
+            $('#all-notifications-container').append(newNotificationHtml);
+        });
+        // remove the notification if clicked the cross button
+        $(document).ready(function() {
+            $(document).on('click', '#all-notifications-container .notification-container .dashboard_heading_wrapper_close_icon', function() {
+                $(this).parents('.notification-container').remove();
+            });
+        });
+
+    </script>
+    <script>
+        // for live server
+        var fcm_ajax_data = {
+            "fcm_notification_permission": localStorage.getItem('fcm_notification_permission'),
+            "fcm_device_token": localStorage.getItem('fcm_device_token'),
+        }
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        $.ajax({
+            url: "https://preprlabs.org/ajax/fcmAjax",
+            dataType: 'json',
+            type: 'POST',
+            async: true,
+            data: fcm_ajax_data,
+            success: function(result){
+                // alert('success');
+                // console.log(result);
+            },
+            error: function(result){
+                // alert('failure');
+                console.log(result);
+            }
+        });
+    </script>
+    <!-- firebase integration end -->
+
+        </head>
+
+<div class="position-relative" id="messages">
+    <div class="position-absolute">
+        <div id="all-notifications-container" class="position-fixed">
+        </div>
+    </div>
+</div>
+
+        <body>
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WLPHD58"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        
+        <!-- Google Tag Manager (noscript) 2nd part-->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WBFRSJG"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+
+                            <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+
+<style>
+    .ui-menu {
+        top: 364px;
+        left: 882px;
+        max-height: 550px;
+        overflow: auto;
+        width: 453.359px;
+    }
+    .ui-autocomplete-category {
+        font-weight: bold;
+        padding: .2em .4em;
+        margin: .8em 0 .2em;
+        line-height: 1.5;
+    }
+    .ui-autocomplete-loading {
+        background: white url("https://prepr-pre-production.s3.ca-central-1.amazonaws.com/uploads/users/kO0DO2JtCMWxRvO2nuIqlA5YWcp57uZHMHFuttn9.gif") right center no-repeat;
+    }
+	
+	.signInButton {
+		margin-left: auto;
+	}
+	
+    .signInButton button {
+        height: 43px;
+        top: 0px;
+        background: #498CCE;
+        border-radius: 8px;
+        font-family: 'SFUIDisplayMedium';
+     }
+     .profileSVG {
+        width: 29px;
+        height: 30px;
+     }
+	 
+	.navbar-nav {
+		align-items: center;
+		flex-grow: 1;
+	}	 	 
+	 
+	.navbar-nav:first-of-type {
+		flex-grow: 0;
+	}	 
+	 
+	.top-menu-options {
+		color: #8B8B8B;
+		display: flex;
+		font-family: 'SFUIDISPLAYREGULAR';
+		flex-grow: 1;
+		font-weight: 700;
+		letter-spacing: 0.85px;
+		height: 60px;
+		padding: 0 0 0 56px;
+		width: 100%;
+	}
+	
+	.top-menu-options li a span {
+		transition: color 0.075s ease;
+	}
+	
+	.top-menu-options li:hover a span {
+		color: #1EAB5E;
+	}
+	
+	span.top-menu-options .nav-item.dropdown ul.dropdown-menu {
+		border-radius: 6px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.top-nw-nav-header.navbar .navbar-nav.right_nav.top-nw-nav span.top-menu-options .nav-item.dropdown ul.dropdown-menu li a{
+		padding: 20px 20px;
+	 }
+
+	.top-nw-nav-header.navbar .navbar-nav.right_nav.top-nw-nav span.top-menu-options .nav-item.dropdown ul.dropdown-menu li:first-of-type a {
+		padding-top: 30px;
+	}
+
+	.top-nw-nav-header.navbar .navbar-nav.right_nav.top-nw-nav span.top-menu-options .nav-item.dropdown ul.dropdown-menu li:last-of-type a {
+		padding-bottom: 30px;
+	}
+	
+	.dropdown-item img {
+		height: 24px;
+		object-fit: contain;
+		padding: 0 10px 0 0;
+		width: 32px;
+	}
+	
+	ul.navbar-nav span.top-menu-options li.nav-item.dropdown.create-menu-option {
+		align-items: center;
+	}
+
+	ul.navbar-nav span.top-menu-options li.nav-item.dropdown.create-menu-option a.nav-link.dropdown-toggle.create-option {
+		background: #13A859;
+		border-radius: 5px;
+		color: white;
+		height: 36px;
+		justify-content: center;
+		padding: 0;
+		transition: 0.075s ease;
+		width: 100px;
+	}
+	
+	ul.navbar-nav span.top-menu-options li.nav-item.dropdown.create-menu-option a.nav-link.dropdown-toggle.create-option:hover {
+		background: white;
+		color: #13A859;
+		outline: 2px solid #13A859;
+		outline-offset: -2px;
+	}
+	
+	header .right_nav .notification .notifi_menu::before {
+		display: none;
+	}
+
+	header .right_nav .notification .notifi_menu {
+		border: none;
+		border-radius: 6px;
+	}
+
+	.top-nw-nav-header.navbar .navbar-nav.right_nav.top-nw-nav .nav-item.dropdown .dropdown-menu .user-settings-dropdown li:first-of-type {
+		border-radius: 6px 6px 0 0;
+		background-color: #13A859;
+		color: white;
+		display: flex;
+		padding: 15px 18px;
+	}
+
+	header .right_nav .notification .notifi_menu ul li:first-of-type > a {
+		flex-grow: 0;
+		flex-shrink: 1;
+		width: fit-content;
+	}
+
+	.user-settings-dropdown li:first-of-type > div {
+		flex-grow: 1;
+	}
+
+	header .navbar-nav.right_nav .notification .notifi_menu ul.user-settings-dropdown li.user-settings-dropdown-info > a {
+		padding: 0 8px 0 0;
+	}	
+	
+	.dropdown-plan {
+		background: white;
+		border-radius: 4px;
+		color: #13A859;
+		font-family: 'SFUIDisplaySemiBold';
+		font-weight: 500;
+		font-size: 14px;
+		margin-bottom: 8px;
+		padding: 1px 6px;
+		width: fit-content;
+		text-transform: uppercase;
+	}
+
+	header .right_nav .notification .notifi_menu ul.user-settings-dropdown li.user-settings-dropdown-info a.dropdown-username {
+		border-bottom: 2px solid transparent;
+		color: white !important;
+		font-family: 'SFUIDisplaySemiBold';
+		font-size: 18px;
+		padding: 0;
+		transition: border 0.125s ease;
+		width: fit-content;
+	}
+
+	header .right_nav .notification .notifi_menu ul.user-settings-dropdown li a {
+		transition: background 0.125s ease;
+	}
+
+	header .right_nav .notification .notifi_menu ul.user-settings-dropdown li:hover,
+	header .right_nav .notification .notifi_menu ul.user-settings-dropdown li:hover a {
+		background: #F3F4F8;
+	}
+
+	header .right_nav .notification .notifi_menu ul.user-settings-dropdown li:first-of-type:hover,
+	header .right_nav .notification .notifi_menu ul.user-settings-dropdown li:first-of-type:hover a {
+		background: inherit;
+	}
+
+	header .right_nav .notification .notifi_menu ul.user-settings-dropdown li a.dropdown-username:hover {
+		background: inherit;    
+		border-bottom: 2px solid white;
+	}
+
+	header .navbar-nav.right_nav .notification .notifi_menu ul.user-settings-dropdown li a {
+		padding: 8px 24px;
+
+	}
+	
+	.top-menu-options li.create-menu-option:hover a.create-option span {
+		color: inherit;
+	}
+	
+	.navbar .dropdown-menu ul.user-settings-dropdown a {
+		color: #13A859 !important;
+	}
+
+	header .navbar-nav.right_nav .notification .notifi_menu ul.user-settings-dropdown li:last-of-type a {
+		border-radius: 0 0 6px 6px;
+		color: inherit !important;
+		padding-bottom: 12px;
+	}
+	
+	header .navbar-nav.right_nav .notification .notifi_menu ul.user-settings-dropdown li {
+		border-bottom: none;
+	}
+	
+	header .navbar-nav.right_nav .notification .notifi_menu ul.user-settings-dropdown li:last-of-type {	
+		border-top: 1px solid #D6D6D6;
+	}
+	
+	.top-nw-nav-header.navbar .navbar-nav.right_nav.top-nw-nav .nav-item.dropdown .dropdown-menu.firstmenu li a.dropdown-item {
+		color: #404252 !important;
+		font-size: 16px;
+		letter-spacing: 0;
+	}
+	
+	input#main_search {
+		width: 256px !important;
+	}
+	
+	ul.user-settings-dropdown {
+		border-radius: 6px;
+		box-shadow: 0 0 4px rgb(0 0 0 / 15%);
+	}
+	
+	.app-dropdown li {
+		justify-content: center;
+	}
+
+	.app-dropdown li a {
+		align-items: center;
+		border-radius: 6px;
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		padding: 10px;
+		text-align: center;
+		transition: background 0.125s ease;
+		width: 100%;
+	}
+
+	.app-dropdown li a:hover {
+		background: #F3F4F8;
+	}
+
+	.app-dropdown li a img {
+		width: 40px;
+		height: 40px;
+	}
+
+	ul.app-dropdown {
+		display: grid;
+		padding: 20px;
+		grid-template-columns: 1fr 1fr 1fr;
+		width: 395px;
+	}
+	
+	.dropdown-rank {
+		align-items: center;
+		display: flex;
+		gap: 4px;
+	}
+
+	.dropdown-rank::before {
+		background: url(/assets/images/header/achievement-glyph.svg);
+		background-size: contain;
+		content: "";
+		display: inline-block;
+		height: 20px;
+		width: 20px;
+	}
+	
+	.header-profile-image {
+		border-radius: 50%;
+		box-shadow: 0px 0px 2px rgb(0 0 0 / 25%);
+		height: 40px;
+		object-fit: contain;
+		width: 40px;
+	}
+	
+	header .nav-item.bar-menu {
+		display: none;
+	}
+	
+	header .nav-item.bar-menu::marker {
+		display: none;
+	}
+	
+	@media (max-width: 1000px) {
+		.right_nav {
+			display: none !important;
+		}
+		
+		header .nav-item.bar-menu {
+			background: url('https://preprlabs.org/assets/images/header/trigram.svg');
+			background-position: center center;
+			background-repeat: no-repeat;
+			display: block;
+			height: 20px;
+			width: 25px;
+		}
+
+		header .nav-item.bar-menu.sidebar-toggle-active {
+			background-image: url('https://preprlabs.org/assets/images/header/cross.svg');
+		}
+
+		header.navbar.bg-white.fixed-top.navbar-expand-lg.top-nw-nav-header {
+			padding: 10px 12px;
+		}
+	}
+</style>
+
+
+
+<!-- Include jQuery UI library -->
+<script>
+    $( function() {
+        $.widget( "custom.catcomplete", $.ui.autocomplete, {
+            _create: function() {
+                this._super();
+                this.widget().menu( "option", "items", "> :not(.ui-autocomplete-category)" );
+            },
+            _renderMenu: function( ul, items ) {
+                var that = this,
+                    currentCategory = "";
+                $.each( items, function( index, item ) {
+                    var li;
+                    if ( item.category != currentCategory ) {
+                        ul.append( "<li class='ui-autocomplete-category'>" + item.title + "</li>" );
+                        currentCategory = item.category;
+                    }
+                    li = that._renderItemData( ul, item );
+                    if ( item.category ) {
+                        li.attr( "aria-label", item.category + " : " + item.label );
+                    }
+                });
+            }
+        });
+
+        $( "#main_search" ).catcomplete({
+            delay: 250,
+            dataType: "json",
+            minLength: 2,
+            async: true,
+            source: function( request, response ) {
+                if ($.trim(request.term) != null && $.trim(request.term) != undefined && $.trim(request.term) != '') {
+                    $.ajax( {
+                        url: "https://preprlabs.org/search",
+                        data: {'keyword' : $.trim(request.term)},
+                        success: function( data ) {
+                            if (data.length >= 1) {
+                                response( data );
+                            } else {
+                                item = {}
+                                item ["label"] = "";
+                                item ["title"] = "No match found for the searched keywords.";
+                                item ["url"] = "javascript:void(0)";
+                                item ["value"] = "";
+                                data.push(item);
+                                response( data );
+                            }
+                        }
+                    } );
+                }
+            },
+            select: function( event, data ) {
+                if (data.item.value === "") {
+                    event.preventDefault();
+                } else {
+                    reDirect(data.item.category, data.item.value, data.item.url)
+                }
+            }
+        } );
+		
+        $( "#mobile_main_search" ).catcomplete({
+            delay: 250,
+            dataType: "json",
+            minLength: 2,
+            async: true,
+            source: function( request, response ) {
+                if ($.trim(request.term) != null && $.trim(request.term) != undefined && $.trim(request.term) != '') {
+                    $.ajax( {
+                        url: "https://preprlabs.org/search",
+                        data: {'keyword' : $.trim(request.term)},
+                        success: function( data ) {
+                            response( data );
+                        }
+                    } );
+                }
+            },
+            select: function( event, data ) {
+                if (data.item.value === "") {
+                    event.preventDefault();
+                } else {
+                    reDirect(data.item.category, data.item.value, data.item.url)
+                }
+            }
+        } );
+    } );
+
+    function reDirect(type, name, url)
+    {
+        window.location.href = url;
+    }
+
+    function reDirectBackup(type, name) {
+        $.post("https://preprlabs.org/getDetail/url", {
+            type: type,
+            name: name,
+            _token: "FF1FYqjTq4jtPgjgPt1mK6osCI0ReRY9aidYj4dS",
+        }, function (data) {
+            if (data.url !== 'undefined') {
+                window.location.href = data.url;
+            }
+            return false;
+        });
+    }
+
+</script>
+
+
+
+<header class="navbar bg-white fixed-top navbar-expand-lg top-nw-nav-header">
+    <div class="container-fluid">
+        <ul class="navbar-nav flex-row d-md-flex top-nw-nv-l">
+            <li class="nav-item">
+                <a href="https://preprlabs.org/explore" data-qa = "Top Nav: Explore - Prepr Logo">
+                    <img src="https://d3f06rtlkr354b.cloudfront.net/public/front/img/logoNew.png" style="width:100px!important" class="home_hint" alt="prepr">
+                </a>
+            </li>
+        </ul>
+		<li class="nav-item bar-menu">
+			<a href="javascript:void(0)" class="nav-link button-collapse waves-effect waves-light"></a>
+		</li>		
+        <ul class="navbar-nav right_nav  top-nw-nav ">
+                            <span class = "top-menu-options"><li class="nav-item d-sm-flex d-md-flex d-lg-flex d-xl-flex">
+	<a class="nav-link" href="https://preprlabs.org/explore" data-qa = "Top Nav: Explore">
+		<span class="d-none d-sm-none d-md-none d-lg-block d-xl-block">Explore</span>
+	</a>
+</li>
+
+<li class="nav-item dropdown d-sm-flex d-md-flex d-lg-flex d-xl-flex">
+	<a class="nav-link dropdown-toggle"  data-qa = "Top Nav: Dashboards" id="new_org_dashboard" href="#" data-toggle="dropdown" data-url="https://preprlabs.org/organisation/home"><span class="d-none d-sm-none d-md-none d-lg-block d-xl-block">Dashboard</span></a>
+	<ul class="dropdown-menu firstmenu ">
+					<li class="dropdown-submenu">
+				<a class="dropdown-item dropdown-toggle"  data-qa = "Top Nav: Dasboards - User" href="https://preprlabs.org/user/home">
+					<img src="https://d3f06rtlkr354b.cloudfront.net/public/front/img/user.png">User dashboard
+				</a>
+			</li>
+							</ul>
+</li>
+
+			<li class="nav-item d-sm-flex d-md-flex d-lg-flex d-xl-flex">
+			<a class="nav-link"  data-qa = "Top Nav: My Challenges" href="https://preprlabs.org/list/challenge">
+				<span class="d-none d-sm-none d-md-none d-lg-block d-xl-block">My Challenges </span>
+			</a>
+		</li>
+		<li class="nav-item d-sm-flex d-md-flex d-lg-flex d-xl-flex">
+			<a class="nav-link"  data-qa = "Top Nav: My Labs" href="https://preprlabs.org/joinedLab">
+				<span class="d-none d-sm-none d-md-none d-lg-block d-xl-block">My Labs</span>
+			</a>
+		</li>
+		<li class="nav-item d-sm-flex d-md-flex d-lg-flex d-xl-flex">
+			<a class="nav-link"  data-qa = "Top Nav: My Projects" href="https://preprlabs.org/my-projects">
+				<span class="d-none d-sm-none d-md-none d-lg-block d-xl-block">My Projects</span>
+			</a>
+		</li>
+		<li class="nav-item d-sm-flex d-md-flex d-lg-flex d-xl-flex">
+			<a class="nav-link"  data-qa = "Top Nav: Career Explorer" href="https://preprlabs.org/myCareer/ryanacham">
+				<span class="d-none d-sm-none d-md-none d-lg-block d-xl-block">Career Explorer</span>
+			</a>
+		</li>	
+	
+
+
+</span>
+            							<li>
+					<a class="waves-effect waves-block" data-qa = "Top Nav: Notifications" href="https://preprlabs.org/notifications">
+						<img src = "https://preprlabs.org/assets/images/header/bell-icon.svg" aria-label = "Notifications">
+													<span class="notifications-indicator"></span>
+											</a>
+				</li>
+				<li>
+					<a class="waves-effect waves-block" data-qa = "Top Nav: Inbox" href="https://preprlabs.org/chat">
+						<img src = "https://preprlabs.org/assets/images/header/inbox-icon.svg" aria-label = "{ __('labels.labels_inbox') }}" style = "width:27px; height: 27px">
+					</a>
+				</li>		
+				<li>
+											<a class="waves-effect waves-block" data-qa = "Top Nav: Intercom Help" href="https://intercom.help/preprme/en/">
+											<img src = "https://preprlabs.org/assets/images/header/help-icon.svg" aria-label = "Help">
+					</a>
+				</li>			
+				<li class="nav-item searchbar">
+					<div class="input-group" id="multiple-datasets">
+						<div class="input-group-prepend">
+							<input type="text" class="form-control typeahead"  id="main_search" style="width:358px" placeholder="Search...">
+						</div>
+					</div>
+				</li>	
+                                        <li class="nav-item notification dropdown">
+                    <a href="https://preprlabs.org/profile/ryanacham"
+					   data-qa = "Top Nav: Profile Dropdown"
+                       class="nav-link user_details_drop dropdown-toggle" id="dropdownMenuButton" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<img class = "header-profile-image"
+							 src="https://prepr-preprlabs-prod-bucket.s3.ca-central-1.amazonaws.com/uploads/users/9T4zuSbNXq97X0QkZ7oGW4DGNCpIDVVmxihV2wdZ.jpg"
+							 onerror="this.onerror=null;this.src='https://preprlabs.org/assets/images/header/default-user-icon.svg';"
+							 title="Ryan Acham">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right notifi_menu" aria-labelledby="dropdownMenuButton">
+                        <ul class="user-settings-dropdown">
+                            <li class = "user-settings-dropdown-info">
+                                <a data-qa = "Top Nav: Profile Dropdown - View Profile - Icon" href=" https://preprlabs.org/profile/ryanacham ">
+									<img class="icon-circle bg-light-green"
+										src="https://prepr-preprlabs-prod-bucket.s3.ca-central-1.amazonaws.com/uploads/users/9T4zuSbNXq97X0QkZ7oGW4DGNCpIDVVmxihV2wdZ.jpg"
+										onerror="this.onerror=null;this.src='https://d3f06rtlkr354b.cloudfront.net/public/front/img/default-user.png';"			 
+										title="Ryan Acham ">
+                                </a>
+								<div>
+									                                    										<a class="dropdown-username" data-qa = "Top Nav: Profile Dropdown - View Profile" href=" https://preprlabs.org/profile/ryanacham ">
+											Ryan Acham
+										</a>
+																												<div class = "dropdown-rank">Learn Rank 4</div>
+																	</div>
+                            </li>
+							                            								<li>
+									<a data-qa = "Top Nav: Profile Dropdown - View Profile - User" href="https://preprlabs.org/profile/ryanacham">
+										<div class="menu-info">Profile</div>
+									</a>
+								</li>
+                                                        <li>
+                                <a data-qa = "Top Nav: Profile Dropdown - Newsfeed" href="https://preprlabs.org/newsfeed">
+                                    <div class="menu-info">Newsfeed</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-qa = "Top Nav: Profile Dropdown - Settings" href="https://preprlabs.org/setting">
+                                    <div class="menu-info">Settings</div>
+                                </a>
+                            </li>
+							                            <li>
+                                <a class="waves-effect waves-block" data-qa = "Top Nav: Log out" href="https://preprlabs.org/logout">
+                                    <div class="menu-info">Log out</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item dropdown grid">
+                    <a href="#"
+                       class="nav-link user_details_drop dropdown-toggle" id="dropdownMenuButton" role="button"
+					   data-qa = "Top Nav: Grid"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<img src = "https://preprlabs.org/assets/images/header/app-icon.svg" aria-label = "Apps">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+						<ul class="app-dropdown">
+							<li>
+								<a data-qa = "Top Nav: Grid - Labs" href="https://preprlabs.org/joinedLab">
+									<img src = "https://preprlabs.org/assets/images/header/lab-icon.svg">
+										Labs
+								</a>
+							</li>
+							<li>
+								<a data-qa = "Top Nav: Grid - Lab Programs" href="https://preprlabs.org/joinedLab">
+									<img src = "https://preprlabs.org/assets/images/header/lab-program-icon.svg">
+									Lab programs
+								</a>
+							</li>
+														<li>
+								<a data-qa = "Top Nav: Grid - Projects" href="https://preprlabs.org/my-projects">
+									<img src = "https://preprlabs.org/assets/images/header/project-icon.svg">
+									Projects
+								</a>
+							</li>
+							<li>
+								<a data-qa = "Top Nav: Grid - Challenges" href="https://preprlabs.org/list/challenge">
+									<img src = "https://preprlabs.org/assets/images/header/challenge-icon.svg">
+									Challenges
+								</a>
+							</li>
+							<li>
+								<a data-qa = "Top Nav: Grid - Challenge Paths" href="https://preprlabs.org/list/challenge">
+									<img src = "https://preprlabs.org/assets/images/header/challenge-path-icon.svg">
+									Challenge Paths
+								</a>
+							</li>
+							<li>
+								<a data-qa = "Top Nav: Grid - Assessments" href="https://preprlabs.org/my-project-assessment">
+									<img src = "https://preprlabs.org/assets/images/header/assessment-icon.svg">
+									Assessments
+								</a>
+							</li>
+							<li>
+								<a data-qa = "Top Nav: Grid - Resources" href="https://preprlabs.org/resource">
+									<img src = "https://preprlabs.org/assets/images/header/resource-module-icon.svg">
+									Resources
+								</a>
+							</li>
+							<li>
+								<a data-qa = "Top Nav: Grid - Skills" href="https://preprlabs.org/myCareer/ryanacham">
+									<img src = "https://preprlabs.org/assets/images/header/skill-icon.svg">
+									Career Explorer
+								</a>
+							</li>
+							<li>
+								<a data-qa = "Top Nav: Grid - Achievements" href="https://preprlabs.org/achievements">
+									<img src = "https://preprlabs.org/assets/images/header/achievement-icon.svg">
+									Achievements
+								</a>
+							</li>		
+							<li>
+								<a data-qa = "Top Nav: Grid - Organizations" href="https://preprlabs.org/organisation-details">
+									<img src = "https://preprlabs.org/assets/images/header/organization-icon.svg">
+									Organizations
+								</a>
+							</li>		
+							<li>
+								<a data-qa = "Top Nav: Team Matching" href="https://preprlabs.org/teamMatching">
+									<img src = "https://preprlabs.org/assets/images/header/team-matching-icon.svg">
+									Team Matching
+								</a>
+							</li>		
+							<li>
+								<a data-qa = "Top Nav: Grid - Leaderboard" href="https://preprlabs.org/my-leader-board">
+									<img src = "https://preprlabs.org/assets/images/header/leaderboard-icon.svg">
+									Leaderboard
+								</a>
+							</li>							
+						</ul>
+					</div>
+                </li>
+                    </ul>
+    </div>
+</header>
+
+<script src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/typeahead.jquery.js"></script>
+<script src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/typeahead.bundle.js"></script>
+<script src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/typeahead.bundle.min.js"></script>
+<script src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/bloodhound.js"></script>
+<div id="contactForm">
+    <h1>Report</h1>
+    <form method="POST" action="https://preprlabs.org/report_n" accept-charset="UTF-8" enctype="multipart/form-data"><input name="_token" type="hidden" value="FF1FYqjTq4jtPgjgPt1mK6osCI0ReRY9aidYj4dS">
+
+    <input class="form-control" id="test2" name="ref_type" type="hidden">
+    <input class="form-control" id="test1" name="ref_id" type="hidden">
+    <textarea class="form-control" placeholder="Description" cols="20" rows="5" required="required" name="description"></textarea>
+    <span class="help-block"></span>
+    <br>
+    <input class="btn btn-sm btn-success" type="submit" value="Save">
+    <input class="btn btn-sm btn-danger closeReportsForm" value="Cancel" disabled/>
+    </form>
+</div>
+                <div class="wrapper">
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+	.side-nav {
+		box-shadow: none;
+		font-family: 'SFUIDisplayRegular', sans-serif;
+		margin: 0;
+		transform: none;
+		top: 55px;
+		left: -100%;			
+	}
+	
+	.side-nav .sidebar-header {
+		background-color: #13A859;
+		color: white;
+		padding: 10px 20px;
+	}
+	
+	.sidebar-header .sidebar-user-details {
+		display: flex;
+		gap: 16px;
+		padding-top: 20px;
+	}
+	
+	.side-nav .dropdown-plan {
+		margin: 0;
+	}
+	
+	.side-nav-fixed {
+		left: 0;
+	}
+	
+	.side-nav,
+	.side-nav-fixed {
+		width: 100%;
+	}
+	
+	.side-nav .dropdown-username {
+		font-size: 20px;
+		font-weight: 500;
+	}
+	
+	.sidebar-header img {
+		height: 56px;
+		width: 56px;
+		object-fit: contain;
+	}
+
+	.sidebar-header a {
+		color: white;
+	}
+	
+	.sidebar-header a.back-button {
+		align-items: center;
+		font-size: 16px;
+		font-weight: 600;
+		display: flex;
+		gap: 20px;
+	}
+
+	.sidebar-header a.back-button::before {
+		background-image: url('https://preprlabs.org/assets/images/header/chevron-back.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		content: "";
+		display: inline-block;
+		height: 17px;
+		width: 17px;
+	}	
+	
+	.side-nav ul {
+		font-size: 20px;
+		padding: 0;
+	}
+	
+	.side-nav li a {
+		align-items: center;
+		color: #101223;
+		display: flex;
+		gap: 20px;
+		padding: 13.5px 27px;
+		transition: 0.075s;
+	}
+	
+	.side-nav li a:hover,
+	.side-nav li a:active {
+		background: #F3F4F8;
+	}	
+	
+	.side-nav li.nav_icon a::before {
+		background-size: contain;
+		background-repeat: no-repeat;
+		content: "";
+		display: inline-block;
+		height: 30px;
+		width: 30px;
+	}
+	
+	.side-nav li.nav_icon.nav_explore a::before {
+		background-image: url('https://preprlabs.org/assets/images/header/explore-icon.svg')
+	}
+	
+	.side-nav li.nav_icon.nav_dashboard a::before,
+	.side-nav li.nav_icon.nav_user_dashboard a::before {
+		background-image: url('https://preprlabs.org/assets/images/header/dashboard-icon.svg')
+	}
+
+	.side-nav li.nav_icon.nav_labs a::before,
+	.side-nav li.nav_icon.nav_lab_dashboard a::before {
+		background-image: url('https://preprlabs.org/assets/images/header/lab-icon.svg')
+	}
+	
+	.side-nav li.nav_icon.nav_challenges a::before {
+		background-image: url('https://preprlabs.org/assets/images/header/challenge-icon.svg')
+	}
+
+	.side-nav li.nav_icon.nav_projects a::before {
+		background-image: url('https://preprlabs.org/assets/images/header/project-icon.svg')
+	}
+
+	.side-nav li.nav_icon.nav_organizations a::before,
+	.side-nav li.nav_icon.nav_organization_dashboard a::before {
+		background-image: url('https://preprlabs.org/assets/images/header/organization-icon.svg')
+	}
+	
+	.side-nav li.nav_icon.nav_resources a::before {
+		background-image: url('https://preprlabs.org/assets/images/header/resource-module-icon.svg')
+	}
+	
+	.side-nav li.nav_icon.nav_resource_collections a::before {
+		background-image: url('https://preprlabs.org/assets/images/header/resource-collection-icon.svg')
+	}
+
+	.side-nav li.nav_icon.nav_resource_groups a::before {
+		background-image: url('https://preprlabs.org/assets/images/header/resource-group-icon.svg')
+	}	
+
+	.side-nav li.nav_icon.nav_skills a::before {
+		background-image: url('https://preprlabs.org/assets/images/header/skill-icon.svg')
+	}
+	
+	.side-nav li.nav_icon.nav_achievements a::before {
+		background-image: url('https://preprlabs.org/assets/images/header/achievement-icon.svg')
+	}
+
+	.side-nav li.nav_icon.nav_assessments a::before {
+		background-image: url('https://preprlabs.org/assets/images/header/assessment-icon.svg')
+	}
+
+	.side-nav li.nav_icon.nav_leaderboard a::before {
+		background-image: url('https://preprlabs.org/assets/images/header/leaderboard-icon.svg')
+	}
+	
+	.side-nav li.nav_icon.nav_teams a::before {
+		background-image: url('https://preprlabs.org/assets/images/header/team-icon.svg')
+	}
+
+	.side-nav li.nav_icon.nav_newsfeed a::before {
+		background-image: url('https://preprlabs.org/assets/images/header/newsfeed-icon.svg')
+	}
+	
+	.side-nav li.nav_icon.nav_help a::before {
+		background-image: url('https://preprlabs.org/assets/images/header/help-icon-green.svg')
+	}
+	
+	.side-nav li.nav_icon.nav_logout a::before {
+		background-image: url('https://preprlabs.org/assets/images/header/logout-icon-dark.svg')
+	}	
+	
+	.side-nav li.nav_icon.nav_profile a::before {
+		background-image: url('https://preprlabs.org/assets/images/header/profile-icon.svg')
+	}
+	
+	.side-nav li.nav_icon.nav_upgrade_plan a::before {
+		background-image: url('https://preprlabs.org/assets/images/header/plan-icon.svg')
+	}
+	
+	.side-nav li.nav_icon.nav_subscriptions a::before {
+		background-image: url('https://preprlabs.org/assets/images/header/subscription-icon.svg')
+	}		
+	
+	.side-nav li.nav_icon.nav_inbox a::before {
+		background-image: url('https://preprlabs.org/assets/images/header/inbox-icon-blue.svg')
+	}		
+	
+	.side-nav li.nav_icon.nav_notifications a::before {
+		background-image: url('https://preprlabs.org/assets/images/header/notification-icon-yellow.svg')
+	}	
+	
+	.side-nav li.nav_icon.nav_settings a::before {
+		background-image: url('https://preprlabs.org/assets/images/header/settings-icon.svg')
+	}	
+	
+	.side-nav li.nav_chevron a::after {
+		background-image: url('https://preprlabs.org/assets/images/header/chevron.svg');
+		background-size: contain;
+		background-repeat: no-repeat;
+		content: "";
+		display: inline-block;
+		height: 22px;
+		width: 22px;		
+	}	
+	
+	.extra-bar h3 {
+		color:  #101223;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+		font-size: 22px;
+		padding: 13.5px 26px 6px;
+	}
+
+	.extra-bar p {
+		color:  #101223;
+		font-size: 14px;
+		padding: 0 26px;
+	}
+	
+	.custom-scrollbar-outer {
+		position: relative;
+	}
+	
+	.nav_chevron a {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.sidebar-search .input-group-prepend {
+		width: 100%;
+	}
+	
+	@media (min-width: 1000px) {
+		.side-nav {
+			display: none !important;
+		}
+	}
+	
+	#ui-id-2 {
+		font-family: 'SFUIDisplayRegular', sans-serif;
+		max-width: 90%;
+		padding: 4px 8px;
+		position: fixed !important;		
+		width: 90% !important;
+		z-index: 90001;
+	}
+	
+	#ui-id-2 li {
+		padding: 4px 0;
+		font-size: 16px;
+	}	
+
+	.sidebar-search .input-group-prepend {
+		width: 100%;
+	}
+
+	.sidebar-search .input-group-prepend input {
+		background-image: url('http://127.0.0.1:8000/assets/images/header/search.svg');
+		background-repeat: no-repeat;
+		background-size: 20px 20px;
+		background-position: 10px center;
+		font-size: 20px;
+		font-weight: 500;
+		padding-left: 40px;
+		width: 100%;
+	}
+	
+	.custom-scrollbar-inner {
+		padding: 0 0 32px;
+	}	
+</style>
+
+
+<aside id="slide-out" class="side-nav user-hint">
+			<div class="sidebar-header">
+			<div class = "sidebar-search">
+				<div class="input-group" id="multiple-datasets">
+					<div class="input-group-prepend">
+						<input type="text" class="form-control typeahead" id="mobile_main_search"
+							   placeholder="Search PreprLabs">
+					</div>
+				</div>
+			</div>
+			<div class = "sidebar-user-details">
+				
+				<a data-qa = "Mobile Nav: View Profile - Icon" href=" 						https://preprlabs.org/profile/ryanacham 
+					">
+					<img src="https://prepr-preprlabs-prod-bucket.s3.ca-central-1.amazonaws.com/uploads/users/9T4zuSbNXq97X0QkZ7oGW4DGNCpIDVVmxihV2wdZ.jpg"
+						 onerror="this.onerror=null;this.src='https://d3f06rtlkr354b.cloudfront.net/public/front/img/default-user.png';">
+				</a>
+				
+				
+				<div>
+																<a data-qa = "Mobile Nav: View Profile" class="dropdown-username" href=" https://preprlabs.org/profile/ryanacham ">
+							Ryan Acham
+						</a>
+																<div class = "dropdown-rank">Learn rank 4</div>
+									</div>
+			</div>
+		</div>
+		<div class = "custom-scrollbar-outer">
+		<div class = "custom-scrollbar-inner">
+			<ul>
+									<li class="nav_icon nav_explore"><a data-qa = "Mobile Nav: Explore" href="https://preprlabs.org/explore">Explore</a></li>
+											<li class="nav_icon nav_dashboard"><a data-qa = "Mobile Nav: User - Dashboard" href = "https://preprlabs.org/user/home">Dashboard</a></li>							
+													<li class="nav_icon nav_labs"><a data-qa = "Mobile Nav: User - Labs" href="https://preprlabs.org/joinedLab">My Labs</a></li>
+																			<li class="nav_icon nav_challenges"><a data-qa = "Mobile Nav: User - Challenges" href="https://preprlabs.org/list/challenge">My Challenges</a></li>
+																			<li class="nav_icon nav_projects"><a data-qa = "Mobile Nav: User - Projects" href="https://preprlabs.org/my-projects">My Projects</a></li>
+															
+					<li class = "nav_chevron nav_browse"><a data-qa = "Mobile Nav: User - Browse" href = "javascript:void(0)">Browse</a></li>
+					<li class = "nav_chevron nav_account"><a data-qa = "Mobile Nav: User - Account" href = "javascript:void(0)">Account</a></li>
+													<li class="nav_icon nav_help"><a data-qa = "Mobile Nav: Intercom Help" href="https://intercom.help/preprme/en/">Help center</a></li>
+													<li class="nav_icon nav_logout"><a data-qa = "Mobile Nav: Log out" href="https://preprlabs.org/logout">Log out</a></li>
+							</ul>
+		</div>
+	</div>
+</aside>
+
+	
+	<aside id="browse-slide-out" class="side-nav user-hint extra-bar">
+		<div class="sidebar-header">
+			<a data-qa = "Mobile Nav: Browse - Return" href = "javascript:void(0)" class = "back-button">Main Menu</a>
+		</div>
+		<div class = "custom-scrollbar-outer">
+			<div class = "custom-scrollbar-inner">
+				<h3>browse</h3>
+				<p>We have programs to support your learning, upskilling and innovation needs. Explore our offerings to find a solution that&#039;s right for you.</p>
+				<ul>
+									
+						<li class="nav_icon nav_labs"><a data-qa = "Mobile Nav: Browse - Labs" href="https://preprlabs.org/joinedLab">Labs</a></li>
+														
+						<li class="nav_icon nav_challenges"><a data-qa = "Mobile Nav: Browse - Challenges" href="https://preprlabs.org/list/challenge">Challenges</a></li>
+										
+									
+						<li class="nav_icon nav_projects"><a data-qa = "Mobile Nav: Browse - Projects" href="https://preprlabs.org/my-projects">Projects</a></li>
+										
+									
+						<li class="nav_icon nav_organizations"><a data-qa = "Mobile Nav: Browse - Organizations" href="https://preprlabs.org/organisation-details">Organizations</a></li>
+										
+									
+						<li class="nav_icon nav_resources"><a data-qa = "Mobile Nav: Browse - Resources" href="https://preprlabs.org/resource">Resources</a></li>
+						
+					<li class="nav_icon nav_skills"><a data-qa = "Mobile Nav: Browse - Career Explorer" href="https://preprlabs.org/myCareer/ryanacham">Career Explorer</a></li>								
+					<hr>
+					<li class="nav_icon nav_achievements"><a data-qa = "Mobile Nav: Browse - Achievements" href="https://preprlabs.org/achievements">Achievements</a></li>				
+					<li class="nav_icon nav_assessments"><a data-qa = "Mobile Nav: Browse - Assessments" href="https://preprlabs.org/my-project-assessment">Assessments</a></li>						
+					<li class="nav_icon nav_leaderboard"><a data-qa = "Mobile Nav: Browse - Leaderboard" href="https://preprlabs.org/my-leader-board">Leaderboard</a></li>		
+					<li class="nav_icon nav_teams"><a data-qa = "Mobile Nav: Browse - Team Matching" href="https://preprlabs.org/teamMatching">Team Matching</a></li>			
+					<li class="nav_icon nav_newsfeed"><a data-qa = "Mobile Nav: Browse - Newsfeed" href="https://preprlabs.org/newsfeed">Newsfeed</a></li>
+				</ul>
+			</div>
+		</div>
+	</aside>
+
+	
+	<aside id="account-slide-out" class="side-nav user-hint extra-bar">
+		<div class="sidebar-header">
+			<a href = "javascript:void(0)" class = "back-button" data-qa = "Mobile Nav: Account - Return">Main Menu</a>
+		</div>
+		<div class = "custom-scrollbar-outer">
+			<div class = "custom-scrollbar-inner">
+				<h3>Account</h3>
+				<p>Connect with peers, keep your profile-up-to-date, manage your billing and other settings.</p>
+				<ul>
+							
+						<li class="nav_icon nav_profile"><a data-qa = "Mobile Nav: Account - Profile" href="https://preprlabs.org/profile/ryanacham">Profile</a></li>
+															
+					<li class="nav_icon nav_inbox"><a data-qa = "Mobile Nav: Inbox" href="https://preprlabs.org/explore">Inbox</a></li>
+					<li class="nav_icon nav_notifications"><a data-qa = "Mobile Nav: Notifications" href="https://preprlabs.org/newsfeed">Notifications</a></li>
+					<li class="nav_icon nav_settings"><a data-qa = "Mobile Nav: Settings" href="https://preprlabs.org/setting">Settings</a></li>
+				</ul>
+			</div>
+		</div>
+	</aside>
+
+	
+	<aside id="manage-slide-out" class="side-nav user-hint extra-bar">
+		<div class="sidebar-header">
+			<a href = "javascript:void(0)" class = "back-button" data-qa = "Mobile Nav: Manage - Return">Main Menu</a>
+		</div>
+		<div class = "custom-scrollbar-outer">
+			<div class = "custom-scrollbar-inner">
+				<h3>Manage</h3>
+				<p>Future-proof your organization with targeted professional development. Onboard, train, and upskill a motivated, Agile team.</p>
+				<ul>
+																								</ul>
+			</div>
+		</div>
+	</aside>
+
+	
+	<aside id="create-slide-out" class="side-nav user-hint extra-bar">
+		<div class="sidebar-header">
+			<a data-qa = "Mobile Nav: Create - Return" href = "javascript:void(0)" class = "back-button">Main Menu</a>
+		</div>
+		<div class = "custom-scrollbar-outer">
+			<div class = "custom-scrollbar-inner">
+				<h3>Create</h3>
+				<p>Facilitate collaborative innovation in order to effectively and efficiently scale your business and upskill your teams.</p>
+				<ul>
+																														
+															
+						<li class="nav_icon nav_projects"><a data-qa = "Mobile Nav: Create - Project" href="https://preprlabs.org/my-projects">Create a project</a></li>
+									</ul>
+			</div>
+		</div>
+	</aside>
+	
+	
+	<aside id="learn-slide-out" class="side-nav user-hint extra-bar">
+		<div class="sidebar-header">
+			<a data-qa = "Mobile Nav: Learn - Return" href = "javascript:void(0)" class = "back-button">Main Menu</a>
+		</div>
+		<div class = "custom-scrollbar-outer">
+			<div class = "custom-scrollbar-inner">
+				<h3>Learn</h3>
+				<p>We support project-based learning through Challenges to help develop strategic business insights and build critical soft skills.</p>
+				<ul>
+											<li class="nav_icon nav_labs"><a data-qa = "Mobile Nav: Learn - My Labs" href="https://preprlabs.org/joinedLab">My Labs</a></li>
+																<li class="nav_icon nav_challenges"><a data-qa = "Mobile Nav: Learn - My Challenges" href="https://preprlabs.org/list/challenge">My Challenges</a></li>
+																<li class="nav_icon nav_projects"><a data-qa = "Mobile Nav: Learn - My Projects" href="https://preprlabs.org/my-projects">My projects</a></li>
+									</ul>
+			</div>
+		</div>
+	</aside>
+	
+	
+	<aside id="dashboard-slide-out" class="side-nav user-hint extra-bar">
+		<div class="sidebar-header">
+			<a data-qa = "Mobile Nav: Dashboard - Return" href = "javascript:void(0)" class = "back-button">Main Menu</a>
+		</div>
+		<div class = "custom-scrollbar-outer">
+			<div class = "custom-scrollbar-inner">
+				<h3>Dashboard</h3>
+				<p>Get at-a-glance insights on your activity on PreprLabs.</p>
+				<ul>
+											<li class="nav_icon nav_user_dashboard"><a data-qa = "Mobile Nav: Dashboard - User" href="https://preprlabs.org/user/home">User Dashboard</a></li>
+																			</ul>
+			</div>
+		</div>
+	</aside>		
+
+	
+	<script>
+		
+		$(window).on('load', function() {
+			const subSidebarMap = [
+				{
+					listingSelector: '.nav_browse',
+					menuSelector: '#browse-slide-out'
+				}, {
+					listingSelector: '.nav_account',
+					menuSelector: '#account-slide-out'				
+				}, {
+					listingSelector: '.nav_manage',
+					menuSelector: '#manage-slide-out'
+				}, {
+					listingSelector: '.nav_create',
+					menuSelector: '#create-slide-out'
+				}, {
+					listingSelector: '.nav_learn',
+					menuSelector: '#learn-slide-out'
+				}, {
+					listingSelector: '.nav_chevron.nav_dashboard',
+					menuSelector: '#dashboard-slide-out'
+				}
+			];
+			
+			for (let listing of subSidebarMap) {
+				$(listing.listingSelector).click( function() {
+					$(listing.menuSelector).toggleClass("side-nav-fixed");
+				});
+				
+				
+				$(listing.menuSelector + ' .back-button').click( function() {
+					$(listing.menuSelector).removeClass('side-nav-fixed');
+					if (!$('.bar-menu').hasClass('sidebar-toggle-active') ) {
+						$('.bar-menu').addClass("sidebar-toggle-active");
+					}
+				});
+				
+				document.querySelector(listing.menuSelector).style.top =
+					document.querySelector('.sidebar-search').getBoundingClientRect().bottom
+					+ "px";
+				
+				
+				setUpScrollbar(listing.menuSelector);	
+			}
+			
+			
+			$('.bar-menu').click ( function() {
+				if ($('.bar-menu').hasClass('sidebar-toggle-active') ) {
+					$('.bar-menu').removeClass("sidebar-toggle-active");
+					$('#slide-out').removeClass("side-nav-fixed");
+					
+					for (let listing of subSidebarMap) {
+						$(listing.menuSelector).removeClass("side-nav-fixed");				
+					}
+				} else {
+					$('.bar-menu').addClass("sidebar-toggle-active");
+					$('#slide-out').addClass("side-nav-fixed");
+				}
+			});
+
+			
+			setUpScrollbar('#slide-out');
+			
+			
+			$('.sidebar-search').on('resize', updateOnResize() );
+			
+			function updateOnResize() {
+				if ( document.querySelector('.sidebar-search').getBoundingClientRect().bottom === 0) {
+					window.requestAnimationFrame(function() {
+						updateOnResize();
+					});
+					return;
+				}
+				
+				let sidebarSearchBtm = document.querySelector('.sidebar-search').getBoundingClientRect().bottom;
+				
+				setUpScrollbar('#slide-out');
+				subSidebarMap.forEach( function(e) {
+					setUpScrollbar(e.menuSelector);
+					document.querySelector(e.menuSelector).style.top = sidebarSearchBtm + "px";
+				});			
+			}
+			
+			function setUpScrollbar(selector) {
+				let headerSelector = selector + ' .sidebar-header';
+				let scrollbarHeight = $(window).height() - parseInt($(headerSelector).height() + 100);
+				
+				$(selector + ' .custom-scrollbar-inner').slimScroll({
+					position: 'right',
+					size: '8px',
+					color: '#444',
+					height: $(selector + ' .custom-scrollbar-inner').css({
+						'height': scrollbarHeight + "px"
+					}),
+					railVisible: true,
+					railColor: 'rgb(206, 207, 208)',
+					alwaysVisible: false
+				});		
+			}
+		});
+	</script>	
+
+    <div id="agreemnetspoplab" class="modal fade my_all_projects_mdl" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Choose Organization  </h4><a href="#" class="js-btn-tooltip" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip" title="" data-original-title="Which Organization will be the owner of this Lab?"><i class="fa fa-exclamation-circle" style="color: #13A859; padding: 10px;"></i></a>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                                    <div class="modal-body">
+                        <div class="row lab_mdl">
+                            <div class="col-md-12 text-center">
+                                                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer" id="modelfooter">
+                        <button type="button" class="btn btn-gray-dark p-lr-30" data-dismiss="modal">Close</button>
+                    </div>
+                            </div>
+        </div>
+    </div>
+    
+    <div id="agreemnetspop" class="modal fade my_all_projects_mdl" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Choose Organization </h4><a href="#" class="js-btn-tooltip" data-toggle="tooltip" data-placement="top" data-custom-class="tooltip" title="" data-original-title="Which Organization will be the owner of this Challenge?"><i class="fa fa-exclamation-circle" style="color: #13A859; padding: 10px;"></i></a>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                                    <div class="modal-body">
+                        <div class="row lab_mdl">
+                            <div class="col-md-12 text-center">
+                                                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer" id="modelfooter">
+                        <button type="button" class="btn btn-gray-dark p-lr-30" data-dismiss="modal">Close</button>
+                    </div>
+                            </div>
+        </div>
+    </div>
+    <script>
+        /* at least select one checkbox on click function code */
+        $(".save_project_labpop").on('click', function (e) {
+            e.preventDefault();
+           // console.log($('.dynamic_popup_action').data('type'));
+            if (!$('input[name=organisation]:checked').val()) {
+                PNotify.removeAll();
+                new PNotify({
+                    text: 'please select at least one organization',
+                    type: 'error'
+                });
+                return false;
+            }else{
+                var id = $('input[name=organisation]:checked').val();
+                window.location.href = "https://preprlabs.org/userlab/create" + "/" + id;
+            }
+        });
+        // Org listing Popup for challenge create
+        $(".save_challengepop").on('click', function (e) {
+            e.preventDefault();
+            if (!$('input[name=organisation]:checked').val()) {
+                PNotify.removeAll();
+                new PNotify({
+                    text: 'please select at least one organization',
+                    type: 'error'
+                });
+                return false;
+            }else{
+                var id = $('input[name=organisation]:checked').val();
+                window.location.href = "https://preprlabs.org/organisation/orgchallengecreate" + "/" + id;
+            }
+        });
+    </script>
+                </div>
+            
+            
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <section class="bg-alice-blue project-section">
+        <div id="explore_interests">
+            <div class="text-right">
+                <img id="close_explore_interests" style="width: 1.5rem" class="m-4" src="front/img/ic_round-clear.svg"
+                    alt="close">
+            </div>
+            <div class="row justify-content-center" style="margin-top: 50px;">
+                <div class="col-lg-6 col-md-8 col-12 text-center">
+                    <h1 style="font-family: 'Poppins', sans-serif; font-weight: 700;">Explore Your Interests</h1>
+                    <p>We’ll recommend content based on your interests we’ve listed here.</br>
+                    Feel free to add or remove topics to customize your experience !</p>
+                    <div style="margin: 4rem auto;" class=" row position-relative">
+                    <div class=col-1> <i class="fa fa-search position-absolute iconsrch"></i></div>
+                        <!-- <input class="mt-4 form-control" type="search" placeholder="Search for Skills" style="padding-left: 30px;"> -->
+                     <div class=col-11><select multiple name="searchForSkills[]" placeholder="Search skills" data-test="Search skill" class="mt-4 form-control topskill searchForSkillsss" multiple='multiple'  style="padding-left: 30px;" >
+                        </select></div>
+                    </div>
+
+                    <h3 style="font-family: 'Poppins', sans-serif; font-weight: 700;" class="my-3">Click an interest to narrow your recommendations.</h3>
+                    <div id="interests">
+                                                    <div class="explore_pill explore_pilll" data-test="skillz" id="13002" >Food Policy</div>
+                                                    <div class="explore_pill explore_pilll" data-test="skillz" id="19295" >Logo Design</div>
+                                                    <div class="explore_pill explore_pilll" data-test="skillz" id="37053" >Frontend Development</div>
+                                                    <div class="explore_pill explore_pilll" data-test="skillz" id="37038" >CIDC workflow</div>
+                                                    <div class="explore_pill explore_pilll" data-test="skillz" id="9039" >Design Thinking</div>
+                                                    <div class="explore_pill explore_pilll" data-test="skillz" id="33097" >Technical Data Analysis</div>
+                                                    <div class="explore_pill explore_pilll" data-test="skillz" id="9238" >Digital</div>
+                                                    <div class="explore_pill explore_pilll" data-test="skillz" id="36982" >Innovation</div>
+                                                    <div class="explore_pill explore_pilll" data-test="skillz" id="36130" >Wellness</div>
+                                                    <div class="explore_pill explore_pilll" data-test="skillz" id="14863" >HTML</div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="d-flex align-items-center explore_section my-3">
+                <div class="w-25 explore_component selected_explore_component py-1" data-component="labs" data-subcomponent="Labs"   data-test="labstab"  style="border-radius: 10px 0 0 10px;" >
+                    <h2 class="text-center" >
+                        Labs
+                    </h2>
+                </div>
+                <div class="w-25 explore_component  py-1" data-component="challenges"  data-test="challengestab">
+                    <h2 class="text-center"  >Challenges</h2>
+                </div>
+                <div class="w-25 explore_component  py-1" data-component="resources"  data-test="resourcestab">
+                    <h2 class="text-center" >
+                    Resources
+                    </h2>
+                </div>
+                <div class="w-25 explore_component  py-1" style="border-radius: 0 10px 10px 0;" data-component="projects" data-test="resourcestab">
+                    <h2 class="text-center" >
+                    Projects
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 my-2 side_filters_xp">
+                    <div class="explore_section">
+                        <div id="component_type01" class="component_type selected_component_type py-2 pl-1" name=
+                            style="border-radius: 10px 10px 0 0;" data-test="labsublist">Labs</div>
+
+                        <div id="component_type02" class="component_type py-2 pl-1"
+                        style="display: none; border-radius: 0 0 10px 10px;" data-test="Resourcesublist" >
+                        Resource collections</div>
+
+                            <div id="component_type03" class="component_type py-2 pl-1" subComp = "Lab Programs" data-test="labProgramssublist"  style="border-radius: 0 0 10px 10px;">
+                            Lab Programs</div>
+                    </div>
+                    <div class="explore_section filter-section pt-2 mt-3" id="explorefilter"  data-test="explorefilter">
+                        <div class="pt-2 pb-2">
+                            <h5 style="font-family: 'Poppins', sans-serif; font-weight: 700; display:inline;" class="mx-2">Filters</h5>
+                            <a class="mr-2 float-right" style="text-decoration: underline; color: mediumvioletred; font-size: larger;" onClick="clearAllFilters()">Clear All</a>
+                        </div>
+                        <div class="filter_type">
+                            <div class="search-filter px-2">
+                                <i class="fas fa-chevron-right" style="margin-right: 6px;"></i>Duration
+                            </div>
+                            <div class="py-3 px-3">
+                                                                <label class="custom-checkbox-container explore_filter">
+                                    Less than 2 Hours
+                                    <input name="Less than 2 Hours" type="checkbox" group="taggroup" data-test="Less than 2 Hours" value="169"  id="169" aria-label="" >
+                                    <span class="checkmark"></span>
+                                </label>
+                                                                <label class="custom-checkbox-container explore_filter">
+                                    2 - 4 Hours
+                                    <input name="2 - 4 Hours" type="checkbox" group="taggroup" data-test="2 - 4 Hours" value="170"  id="170" aria-label="" >
+                                    <span class="checkmark"></span>
+                                </label>
+                                                                <label class="custom-checkbox-container explore_filter">
+                                    4 - 8 Hours
+                                    <input name="4 - 8 Hours" type="checkbox" group="taggroup" data-test="4 - 8 Hours" value="171"  id="171" aria-label="" >
+                                    <span class="checkmark"></span>
+                                </label>
+                                                                <label class="custom-checkbox-container explore_filter">
+                                    1 - 2 Days
+                                    <input name="1 - 2 Days" type="checkbox" group="taggroup" data-test="1 - 2 Days" value="172"  id="172" aria-label="" >
+                                    <span class="checkmark"></span>
+                                </label>
+                                                                <label class="custom-checkbox-container explore_filter">
+                                    3 - 5 Days
+                                    <input name="3 - 5 Days" type="checkbox" group="taggroup" data-test="3 - 5 Days" value="173"  id="173" aria-label="" >
+                                    <span class="checkmark"></span>
+                                </label>
+                                                                <label class="custom-checkbox-container explore_filter">
+                                    5 + Days
+                                    <input name="5 + Days" type="checkbox" group="taggroup" data-test="5 + Days" value="174"  id="174" aria-label="" >
+                                    <span class="checkmark"></span>
+                                </label>
+                                                            </div>
+                        </div>
+                        <div class="filter_type">
+                            <div class="search-filter px-2">
+                                <i class="fas fa-chevron-right" style="margin-right: 6px;"></i>Level
+                            </div>
+                            <div class="py-3 px-3">
+                                                                                            <label class="custom-checkbox-container explore_filter">Beginner
+                                    <input name="Beginner"  data-test="Beginner" group="taggroup" type="checkbox" value="157" id="157" aria-label="" >
+                                    <span class="checkmark"></span>
+                                </label>
+                                                                <label class="custom-checkbox-container explore_filter">Intermediate
+                                    <input name="Intermediate"  data-test="Intermediate" group="taggroup" type="checkbox" value="158" id="158" aria-label="" >
+                                    <span class="checkmark"></span>
+                                </label>
+                                                                <label class="custom-checkbox-container explore_filter">Advanced
+                                    <input name="Advanced"  data-test="Advanced" group="taggroup" type="checkbox" value="159" id="159" aria-label="" >
+                                    <span class="checkmark"></span>
+                                </label>
+                                                                <label class="custom-checkbox-container explore_filter">Mixed
+                                    <input name="Mixed"  data-test="Mixed" group="taggroup" type="checkbox" value="160" id="160" aria-label="" >
+                                    <span class="checkmark"></span>
+                                </label>
+                                                                                        </div>
+                        </div>
+                        <div class="filter_type">
+                            <div class="search-filter px-2">
+                                <i class="fas fa-chevron-right" style="margin-right: 6px;"></i>Organizations
+                            </div>
+                            <div class="py-3 px-3">
+                                                                                            <label class="custom-checkbox-container explore_filter">Prepr
+                                    <input name="Prepr"  data-test="Prepr" group="verified_org"  type="checkbox" value="19" id="19" aria-label="" >
+                                    <span class="checkmark"></span>
+                                </label>
+                                                                <label class="custom-checkbox-container explore_filter">Linux Foundation
+                                    <input name="Linux Foundation"  data-test="Linux Foundation" group="verified_org"  type="checkbox" value="206" id="206" aria-label="" >
+                                    <span class="checkmark"></span>
+                                </label>
+                                                                <label class="custom-checkbox-container explore_filter">Magnet
+                                    <input name="Magnet"  data-test="Magnet" group="verified_org"  type="checkbox" value="239" id="239" aria-label="" >
+                                    <span class="checkmark"></span>
+                                </label>
+                                                                <label class="custom-checkbox-container explore_filter">CertNexus
+                                    <input name="CertNexus"  data-test="CertNexus" group="verified_org"  type="checkbox" value="264" id="264" aria-label="" >
+                                    <span class="checkmark"></span>
+                                </label>
+                                                                <label class="custom-checkbox-container explore_filter">Ontario Chamber of Commerce
+                                    <input name="Ontario Chamber of Commerce"  data-test="Ontario Chamber of Commerce" group="verified_org"  type="checkbox" value="281" id="281" aria-label="" >
+                                    <span class="checkmark"></span>
+                                </label>
+                                                                <label class="custom-checkbox-container explore_filter">Youth Boost
+                                    <input name="Youth Boost"  data-test="Youth Boost" group="verified_org"  type="checkbox" value="414" id="414" aria-label="" >
+                                    <span class="checkmark"></span>
+                                </label>
+                                                                                        </div>
+                        </div>
+                        <div class="filter_type">
+                            <div class="search-filter px-2" id="skill-filter">
+                                <i class="fas fa-chevron-right" style="margin-right: 6px;"></i>Skills
+                            </div>
+                            <div class="py-3 px-3">
+                                <select multiple name="searchForSkills[]"  data-test="searchForSkills"  id ="searchForSkills" placeholder="Search skills" class="mt-4 form-control searchForSkillss explore_filter" multiple='multiple'></select>
+                            </div>
+                        </div>
+                        <div class="filter_type explore_filter" id="status_filter_type" style="display: none;">
+                            <div class="search-filter px-2">
+                                <i class="fas fa-chevron-right" style="margin-right: 6px;"></i>Status
+                            </div>
+                            <div class="py-3 px-3">
+                                                                <label class="custom-checkbox-container">Open
+                                    <input name="Open" data-test="Open"  id="162" group="taggroup" type="checkbox" class="chb" value="162" aria-label="" >
+                                    <span class="checkmark"></span>
+                                </label>
+                                                                <label class="custom-checkbox-container">Closed
+                                    <input name="Closed" data-test="Closed"  id="163" group="taggroup" type="checkbox" class="chb" value="163" aria-label="" >
+                                    <span class="checkmark"></span>
+                                </label>
+                                                                <label class="custom-checkbox-container">In Progress
+                                    <input name="In Progress" data-test="In Progress"  id="164" group="taggroup" type="checkbox" class="chb" value="164" aria-label="" >
+                                    <span class="checkmark"></span>
+                                </label>
+                                                                <label class="custom-checkbox-container">Submitted
+                                    <input name="Submitted" data-test="Submitted"  id="165" group="taggroup" type="checkbox" class="chb" value="165" aria-label="" >
+                                    <span class="checkmark"></span>
+                                </label>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 exp_box">
+                    <div class="row">
+                        <div class="col-12 my-2 exp_box">
+                            <div class="explore_section">
+                                <div class="row">
+                                    <div class="col-12 col-xl-6 col-lg-5 col-md-5 col-xs-12 ">
+                                        <div class="d-flex align-items-center p-2">
+                                            <div class="position-relative">
+                                                <i class="fa fa-search position-absolute"
+                                                    style="left: 10px; top: 10px;"></i>
+                                                <input class="form-control" data-test="Search by title" type="search" id="keyword" name=""
+                                                    placeholder="Search" style="padding-left: 30px;">
+                                            </div>
+                                            <div>
+                                                <button class="btn blue_btn" id = "srch_btn">Search</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 col-md-7 col-xl-6 col-12">
+                                        <div class="d-flex align-items-center float-right p-2">
+                                            <div>
+                                                <small>Sort by </small>
+                                            </div>
+                                            <div class="pl-1">
+                                                <select name="sorting" id="sortlist" class="form-control sortby"
+                                                    style="min-width: 10rem" >
+                                                    <option value="Recently Added" data-test="Recently Added" onclick="getFilteredList(1)">Recently added</option>
+                                                    <option value="Most Popular" data-test="Most Popular"  onclick="getFilteredList(1)">Most popular</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="selectedskl" data-test="selectedskl">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 my-2 exp_box" id="filtered-list"  data-test="filtered-list">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                            	
+            	
+            <style>
+    .lab_mdll input[type=radio]:checked+label>img {
+        box-shadow: 0px 0 2px 2px #13b15c !important;
+        -webkit-box-shadow: 0px 0 2px 2px #13b15c !important;
+    }
+
+    .footerHeight {
+        height: 51px !important;
+    }
+</style>
+<footer class="footer card bg-white footerHeight">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+
+                <label class="footerLinks" style="float:left; padding: 10px 5px; font-size: 12px"
+                    target="_blank">v24.0.6</a></label>
+                <a class="footerLinks" href="https://prepr.org/privacy-policy/"
+                    target="_blank">Privacy policy</a>
+                <a class="footerLinks" href="https://prepr.org/terms-of-use/"
+                    target="_blank">Terms of use</a>
+                                    <a class="footerLinks" href="https://intercom.help/preprme/en/"
+                        target="_blank">Help Center</a>
+                                <label class="footerLinks"
+                    style="float: right;padding: 0px 5px; font-size: 12px">Powered by<a
+                        href="https://learnlab.ai" target="_blank"><b>LearnLab.ai</b></a></label>
+            </div>
+        </div>
+    </div>
+</footer>
+    <div id="agreemnetspop" class="modal fade my_all_projects_mdl" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">All Organizations</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                                    <div class="modal-body">
+                        <div class="row lab_mdl">
+                            <div class="col-md-12 text-center">
+                                                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer" id="modelfooter">
+                        <button type="button" class="btn btn-gray-dark p-lr-30"
+                            data-dismiss="modal">Close</button>
+                    </div>
+                            </div>
+        </div>
+    </div>
+    <div id="agreemnetspoplab" class="modal fade my_all_projects_mdl" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">All Organizations</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                                    <div class="modal-body">
+                        <div class="row lab_mdl">
+                            <div class="col-md-12 text-center">
+                                                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer" id="modelfooter">
+                        <button type="button" class="btn btn-gray-dark p-lr-30"
+                            data-dismiss="modal">Close</button>
+                    </div>
+                            </div>
+        </div>
+    </div>
+    <script>
+        // Challenge template create process start
+        $(".clone_template_data").on('click', function(e) {
+            e.preventDefault();
+            if (!$('input[name=selectorganization]:checked').val()) {
+                PNotify.removeAll();
+                new PNotify({
+                    text: 'please select at least one organization',
+                    type: 'error'
+                });
+                return false;
+            } else {
+                $('#cloneTemplatePopup').modal('toggle');
+                var organisation_id = $('input[name=selectorganization]:checked').val();
+                var template_id = $('#templateId').val();
+                challengeTemplateClone(template_id, organisation_id);
+            }
+        });
+
+        /*  clone challenge template  */
+        function challengeTemplateClone(template_id, organisation_id) {
+            $.ajax({
+                type: "POST",
+                url: "https://preprlabs.org/challenge-template-clone",
+                data: {
+                    template_id: template_id,
+                    organisation_id: organisation_id
+                },
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                success: function(result) {
+                    if (result.status == 'success') {
+                        swal("Challenge clone process started please wait!", {
+                            icon: "info",
+                            button: "OK",
+                        });
+                        PNotify.removeAll();
+                        new PNotify({
+                            text: result.message,
+                            type: "success"
+                        });
+                        setTimeout(function() {
+                            window.location.href = result.challenge_url;
+                        }, 3000);
+                    } else {
+                        $("#credit-limit-reached").modal('show');
+
+                        setTimeout(function() {
+                            window.location.reload(true);
+                        }, 3000);
+                    }
+                },
+                error: function(response, exception) {
+                    if (response.status == 404) {
+                        var responseparse = $.parseJSON(response.responseText);
+                        msg = responseparse.message;
+                    } else {
+                        msg = 'Uncaught Error';
+                    }
+                    swal("Error!", msg, "error");
+                    setTimeout(function() {
+                        window.location.reload(true);
+                    }, 1500);
+                },
+            });
+        }
+        // Challenge template create process end
+
+        /* at least select one checkbox on click function code */
+        $(".save_project_challengepop").on('click', function(e) {
+            e.preventDefault();
+            if (!$('input[name=organisation]:checked').val()) {
+                PNotify.removeAll();
+                new PNotify({
+                    text: 'please select at least one organization',
+                    type: 'error'
+                });
+                return false;
+            } else {
+                var id = $('input[name=organisation]:checked').val();
+                window.location.href = "https://preprlabs.org/organisation/orgchallengecreate" + "/" + id;
+            }
+        });
+        /* at least select one checkbox on click function code */
+        $(".save_project_labpop").on('click', function(e) {
+            e.preventDefault();
+            // console.log($('.dynamic_popup_action').data('type'));
+            if (!$('input[name=organisation]:checked').val()) {
+                PNotify.removeAll();
+                new PNotify({
+                    text: 'please select at least one organization',
+                    type: 'error'
+                });
+                return false;
+            } else {
+                var id = $('input[name=organisation]:checked').val();
+                window.location.href = "https://preprlabs.org/userlab/create" + "/" + id;
+            }
+        });
+
+        function clearFilteredList(divId = 'filtered-list') {
+            $('#' + divId).html(
+                '<div class="row"><div class="col-xl-3 col-lg-5 col-md-5 col-sm-5 col-xs-12"><div class="linear-background"></div></div><div class="col-xl-9 col-lg-7 col-md-7 col-sm-7 col-xs-12"><div class="linear-background"></div></div><div class="divider"></div></div><div class="row"><div class="col-xl-3 col-lg-5 col-md-5 col-sm-5 col-xs-12"><div class="linear-background"></div></div><div class="col-xl-9 col-lg-7 col-md-7 col-sm-7 col-xs-12"><div class="linear-background"></div></div></div>'
+                );
+        }
+
+        function clearFilteredBox(divId = 'plan-box') {
+            $('#' + divId).html(
+                '<div class="row"><div class="col-12"><div class="linear-background" style="height: 400px;"></div></div></div>'
+                );
+        }
+
+        function imageErrorLoadDefault(image, loadOnDiv) {
+            // hide broken image
+            $(image).hide();
+            // show parent div for image
+            $(image).parent().show();
+            // remove display none form challenge name html
+            $(image).closest('.load-default-image').find(".imageCanvasError").attr("style", "display: block;");
+        }
+    </script>
+        <script src="https://js.chargebee.com/v2/chargebee.js" data-cb-site="preprme"></script>
+    
+    
+    <style>
+  .centerModal{
+    width: 600px  !important;
+    top: 40px  !important;
+    left: calc(50% - 300px)  !important;
+    bottom: 40px  !important;
+    text-align:center !important;
+  }  
+
+  .modalImg{
+      height: 200px;
+      width: 200px;
+      padding: 30px;
+  }
+
+  .modalcolor{
+    background-color: lightgray;
+  }
+
+  .body_text{
+    color: #423a3a !important;
+  }
+
+  .modalbtn{
+    background-color: #ff9800 !important;
+  }
+</style>
+<div class="modal fade col-md-6 centerModal" id="credit-limit-reached">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header modalcolor">
+                    <img src="https://preprlabs.org/front/img/coins.png" class="center modalImg"></img>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 0px; padding: 0px;">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                <h3 style="color: black">Credit Limit Reached</h3>
+                    <p class="body_text">You have used all your existing credits in your plan. Please purchase more credits or upgrade your existing plan. If you do not have permission to change your plan, contact your organization administrator.</p>
+                <a class= "btn btn-primary modalbtn"  href = "javascript:void(0)"  data-cb-type = "portal" data-qa = "Unlock Modal - View Plan">View Plans</a>
+                </div>
+            </div>
+        </div>
+</div>
+
+<div class="modal fade col-md-6 centerModal" id="upgrade-account">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header modalcolor">
+                    <img src="https://preprlabs.org/front/img/key.png" class = "center modalImg"></img>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 0px; padding: 0px;">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                <h3 style="color: black">Upgrade Your Account</h3>
+                    <p class ="body_text">These features are not offered under your plan. Upgrade your account now to get the access of premium features.</p>
+                <a class= "btn btn-primary modalbtn" href = "javascript:void(0)"  data-cb-type = "portal" data-qa = "Unlock Modal - View Plan">View Plans</a>
+                </div>
+            </div>
+        </div>
+</div>            <script src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/jquery.slimscroll.min.js"></script>
+            <script>
+                $(".button-collapse").click(function () {
+                    $("#slide-out").toggleClass("side-nav-fixed");
+                });
+                let navbarheight = $(".side-nav").height();
+                let user_sec = $(".user").height();
+                // let nav_ttl = $(".nav_title").height();
+                let totalVal = parseInt(user_sec + 100);
+                let h = $(window).height() - totalVal;
+                $('.sidenav').slimScroll({
+                    position: 'right',
+                    size: '2px',
+                    color: '#6fc05c',
+                    height: $('.sidenav').css({'height': h + "px"}),
+                    railVisible: true,
+                    railColor: 'rgb(206, 207, 208)',
+                    alwaysVisible: false
+                });
+                $('.notifi_lst').slimScroll({
+                    position: 'right',
+                    size: '2px',
+                    color: '#6fc05c',
+                    height: 'auto',
+                    railVisible: true,
+                    railColor: 'rgb(206, 207, 208)',
+                    alwaysVisible: false
+                });
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': "FF1FYqjTq4jtPgjgPt1mK6osCI0ReRY9aidYj4dS"
+                    }
+                });
+            </script>
+            <script>
+                $(window).resize(function () {
+                    var navbarheight = $(".side-nav").height();
+                    var user_sec = $(".user").height();
+                    // var nav_ttl = $(".nav_title").height();
+                    var totalVal = parseInt( user_sec + 100);
+                    var h = $(window).height() - totalVal;
+                    $('.sidenav').slimScroll({
+                        position: 'right',
+                        size: '2px',
+                        color: '#6fc05c',
+                        height: $('.sidenav').css({'height': h + "px"}),
+                        railVisible: true,
+                        railColor: 'rgb(206, 207, 208)',
+                        alwaysVisible: false
+                    });
+                });
+            </script>
+            <script src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/mdb.min.js"></script>
+                                     <!-- Onscreen Notifications -->
+                <script src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            switch (null) {
+                case 'labs':
+                    $('#component_type01').text('Labs').attr('subComp', 'Labs');
+                    $('#component_type03').text('Lab Programs').attr('subComp', 'Lab Programs');
+                    break;
+                case 'challenges':
+                    $('#component_type01').text('Challenges').attr('subComp', 'Challenges');
+                    $('#component_type03').text('Challenge Paths').attr('subComp', 'Challenge Paths');
+                    break;
+                case 'resources':
+                    $('#component_type01').text('Resource modules').attr('subComp', 'Resource Modules');
+                    $('#component_type02').show();
+                    $('#component_type02').text('Resource collections').attr('subComp', 'Resource Collections');;
+                    $('#component_type03').text('Resource groups').attr('subComp', 'Resource Groups');;
+                    break;
+                case 'projects':
+                    $('.component_type').hide();
+                    $('.filter_type').hide();
+                    $('#status_filter_type').show();
+                    break;
+            }
+        });
+    </script>
+    
+    
+    <script>
+        // for project filters
+        $(".chb").change(function() {
+            $(".chb").not(this).prop('checked', false);
+        });
+
+        $(".searchForSkillss").select2({
+            placeholder: "Search skills",
+            language:{
+              searching:function(){
+                return "Searching";
+              },
+              noResults: function(){
+                return "No results found.";
+              },
+            },
+            width: "100%",
+            closeOnSelect: true,
+            //tags: true,
+            ajax: {
+                url: 'https://preprlabs.org/searchForSkills',
+                cache: true,
+                delay: 1000,
+                data: function (params) {
+                    return {
+                        search: params.term,
+                    };
+                },
+                processResults: function (data) {
+                    return {
+                        results: data.result
+                    };
+                }
+            },
+        });
+
+        // $(document).ready(function() {
+        $(".searchForSkillsss").select2({
+            placeholder: "Search skills",
+            language:{
+              searching:function(){
+                return "Searching";
+              },
+              noResults: function(){
+                return "No results found.";
+              },
+            },
+            width: "100%",
+            closeOnSelect: true,
+            //tags: true,
+            ajax: {
+                url: 'https://preprlabs.org/searchForSkills',
+                cache: true,
+                delay: 1000,
+                data: function (params) {
+                    return {
+                        search: params.term,
+                    };
+                },
+                processResults: function (data) {
+                    return {
+                        results: data.result
+                    };
+                }
+            },
+        });
+
+        $(document).on('click', '#close_explore_interests', function() {
+            $(this).parents('#explore_interests').hide();
+        });
+
+        $('.search-filter').next().slideToggle();
+        $('.search-filter').next().toggleClass('py-3');
+        $(document).on('click', '.search-filter', function() {
+            $(this).next().toggleClass('py-3');
+            if ($(this).find('.fa-chevron-down').length > 0) {
+                $(this).find('.fa-chevron-down').replaceWith('<i class="fas fa-chevron-right" style="margin-right: 6px;"></i>');
+            } else {
+                $(this).find('.fa-chevron-right').replaceWith('<i class="fas fa-chevron-down" style="margin-right: 6px;"></i>');
+            }
+            $(this).next().slideToggle();
+        });
+        let lableSkillsArray =[];
+        $(document).on('click', '.remove_interest', function() {
+            $(this).parents('.explore_pill').hide();
+            var html =  $(this).parent().text();
+            $('.explore_pilll:contains('+html+')').removeClass('selected_explore_pill');
+            let removeResult = [];
+            removeResult = lableSkillsArray.filter(x => x !== $(this).parent().attr('id'));
+            lableSkillsArray = [];
+            lableSkillsArray = removeResult;
+            getFilteredList(1);
+        });
+        $(document).on('click', '.explore_pilll', function() {
+            var selectedSkillsIds;
+            let isSelected =  $(this).hasClass('selected_explore_pill');
+            if(!isSelected) {
+                var html =  $(this).text();
+                $(".selectedskl").append( `<div class="explore_pill selected_explore_pill find_pill" id="` + this.id + `">` + html + `<i class="ml-2 fas fa-times remove_interest"></i></div>`);
+                selectedSkillsIds = this.id;
+                lableSkillsArray.push(selectedSkillsIds);
+            } else {
+                var html =  $(this).text();
+                selectedSkillsIds = this.id;
+                $('.find_pill:contains('+html+')').remove();
+                let removeResult = [];
+                removeResult = lableSkillsArray.filter(x => x !== this.id);
+                lableSkillsArray = [];
+                lableSkillsArray = removeResult;
+            }
+            $(this).toggleClass('selected_explore_pill');
+            getFilteredList(1);
+        });
+
+        $(document).on('click', '.explore_component', function() {
+            $('.explore_component').removeClass('selected_explore_component');
+            $('.component_type').removeClass('selected_component_type');
+            $('#component_type01').addClass('selected_component_type');
+            $(this).addClass('selected_explore_component');
+            getFilteredList(1);
+            $('.component_type').show();
+            $('.filter_type').show();
+            $('#status_filter_type').hide();
+            $('#component_type02').hide();
+            var mainComponent = ($(this).data('component'));
+            var subComponent = $('.selected_component_type').attr('subComp');
+            $('.row-loader-linear').show();
+            $('.row-loader-appear').hide();
+            switch ($(this).data('component')) {
+                case 'labs':
+                    $('#component_type01').text('Labs').attr('subComp', 'Labs');
+                    $('#component_type03').text('Lab Programs').attr('subComp', 'Lab Programs');
+                    break;
+                case 'challenges':
+                    $('#component_type01').text('Challenges').attr('subComp', 'Challenges');
+                    $('#component_type03').text('Challenge Paths').attr('subComp', 'Challenge Paths');
+                    break;
+                case 'resources':
+                    $('#component_type01').text('Resource modules').attr('subComp', 'Resource Modules');
+                    $('#component_type02').show();
+                    $('#component_type02').text('Resource collections').attr('subComp', 'Resource Collections');;
+                    $('#component_type03').text('Resource groups').attr('subComp', 'Resource Groups');;
+                    break;
+                case 'projects':
+                    $('.component_type').hide();
+                    $('.filter_type').hide();
+                    $('#status_filter_type').show();
+                    break;
+            }
+        });
+
+        $(document).on('click', '.component_type', function() {
+            $('.component_type').removeClass('selected_component_type');
+            //$("#explorefilter input[type=checkbox]").prop('checked', false);
+            $(this).addClass('selected_component_type');
+            getFilteredList(1);
+        });
+        $('.explore_filter').on('change', function() {
+            getFilteredList(1);
+        });
+        $('.topskill').on('change', function() {
+            getFilteredList(1);
+        });
+
+        $('#srch_btn').on('click', function() {
+            getFilteredList(1);
+        });
+
+        $('.sortby').on('change', function() {
+            getFilteredList(1);
+        });
+
+        /********************************** */
+        function getFilteredList(page_number)
+        {
+            clearFilteredList();
+            var component =  $('.selected_explore_component').data('component');
+            var subcomponent =$('.selected_component_type').attr('subComp');
+            var type = new Array();
+            var verifiedOrg = new Array();
+            var skill = new Array();
+            var sortby = $('#sortlist').find(":selected").val();
+            var searchkeywords = document.getElementById('keyword').value;
+
+            $("#explorefilter input[group=taggroup]:checked").each(function () {
+                type.push(this.value);
+            });
+            $("#explorefilter input[group=verified_org]:checked").each(function () {
+                verifiedOrg.push(this.value);
+            });
+            lableSkillsArray.forEach(function (item) {
+                skill.push(item) ;
+            });
+            var data = $('.searchForSkillss').select2('data');
+                data.forEach(function (item) {
+                skill.push(item.id) ;
+            });
+            var data = $('.searchForSkillsss').select2('data');
+            data.forEach(function (item) {
+                skill.push(item.id) ;
+            });
+            console.log(skill)
+
+            $.ajax({
+                type: 'POST',
+                url: "https://preprlabs.org/ajax/filterforExlore",
+                data: {
+                    component: component,
+                    subcomponent: subcomponent,
+                    type : type,
+                    skill : skill,
+                    keyword : searchkeywords,
+                    page : page_number,
+                    sortby : sortby,
+                    verifiedOrg : verifiedOrg
+                },
+                success: function(data) {
+                    $('#filtered-list').html(data);
+                },
+                error: function (jqXHR, exception) {
+                    if (jqXHR.status === 0) {
+                        msg = 'Not connect.\n Verify Network.';
+                    } else if (jqXHR.status == 404) {
+                        msg = 'Requested page not found. [404]';
+                    } else if (jqXHR.status == 500) {
+                        var response = $.parseJSON(jqXHR.responseText);
+                        msg = response.message;
+                    } else {
+                        msg = 'Uncaught Error';
+                    }
+                    PNotify.removeAll();
+                    new PNotify({
+                        text: msg,
+                        type: "error"
+                    });
+                },
+            });
+        }
+        getFilteredList(1)
+
+        /*********************************** */
+        /*Jquery for show challenge name as image*/
+        function imageError(image) {
+            // hide broken image
+            $(image).hide();
+            // show parent div for image
+            $(image).parent().show();
+            // remove display none form challenge name html
+            $(image).closest('.cover_image').find(".imageCanvasError").attr("style", "display: contents;");
+        }
+
+        function clearAllFilters() {
+            $(".filter-section input[group=taggroup]:checked, input[group=verified_org]:checked").prop("checked", false);
+            $('#searchForSkills').empty().trigger("change");
+        }
+    </script>
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                <!-- langugeDropdown start  -->
+<div class="langugeDropdown onHover">
+    <button class="btn dropdown-toggle" name="recordinput" data-toggle="dropdown"> English</button>
+    <ul class="dropdown-menu">
+                <li>
+            <a href="https://preprlabs.org/language/en">
+                                    English
+                            </a>
+        </li>
+                <li>
+            <a href="https://preprlabs.org/language/fr-CA">
+                                    French
+                            </a>
+        </li>
+            </ul>
+</div>
+<!-- langugeDropdown end  -->
+
+<style>
+    .langugeDropdown {
+        width: 115px;
+        position: fixed;
+        bottom: 0;
+        left: 40px;
+    }
+
+    .langugeDropdown .dropdown-toggle {
+        background-color: #000;
+        padding: 9px 15px;
+        margin: 0;
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+    }
+
+    .langugeDropdown .dropdown-toggle:after {
+        display: none;
+    }
+
+    .langugeDropdown .dropdown-menu {
+        min-width: 115px;
+        left: -5px;
+        padding: 0;
+        border: 0;
+    }
+
+    .langugeDropdown .dropdown-menu li a {
+        background-color: #498cce;
+        width: 100%;
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 9px 15px;
+    }
+
+    .langugeDropdown .dropdown-menu li:first-child a {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .langugeDropdown .dropdown-menu li a:hover,
+    .langugeDropdown .dropdown-menu li a.active {
+        background-color: #7db6ef;
+    }
+
+    .langugeDropdown.open .dropdown-toggle,
+    .langugeDropdown.show .dropdown-toggle {
+        border-radius: 0;
+    }
+
+    .langugeDropdown.open .dropdown-menu {
+        position: absolute;
+        transform: translate3d(0px, -85px, 0px);
+        top: 0px;
+        left: 0px;
+        will-change: transform;
+        display: block;
+    }
+</style>
+
+<script>
+    $(".dropdown-menu li a").click(function(){
+        var selText = $(this).text();
+        $(this).parents('.langugeDropdown').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
+    });
+    $(".onHover").hover(function(){
+        $(".onHover").addClass('open');
+    });
+    $(".onHover").mouseleave(function(){
+        $(".onHover").removeClass('open');
+    });
+</script>
+            </body>
+        <script>(function(){ var s = document.createElement('script'), e = ! document.body ? document.querySelector('head') : document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function(){ acsbJS.init({ statementLink : '', footerHtml : '', hideMobile : false, hideTrigger : false, language : 'en', position : 'left', leadColor : '#109326', triggerColor : '#077829', triggerRadius : '50%', triggerPositionX : 'right', triggerPositionY : 'top', triggerIcon : 'wheels', triggerSize : 'medium', triggerOffsetX : 5, triggerOffsetY : 42, mobile : { triggerSize : 'small', triggerPositionX : 'right', triggerPositionY : 'center', triggerOffsetX : 10, triggerOffsetY : 0, triggerRadius : '50%' } }); }; e.appendChild(s);}());</script>
+</html>
